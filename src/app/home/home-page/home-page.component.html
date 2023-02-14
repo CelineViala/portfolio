@@ -1,0 +1,30 @@
+
+<div #box class="row test animate__animated">
+    <div class="cont col m8 offset-m2 s12">
+        <img class="animate__animated bulle b1" #bulle src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676293991/bulle_izxyvm.png" alt="">
+        <h1 class="animate__animated title" #title><span class="letter-color-blue">C</span>él<span class="letter-color-pink">i</span>ne <span class="letter-color-blue">V</span>iala</h1>
+        <h2 class="animate__animated sub" #subtitle>D<span class="letter-color-green">é</span>veloppeuse <span class="letter-color-yellow">W</span>eb</h2>
+
+        <div #tabs class="tabs-section col s12">
+            <div  class="tab-section" (click)="handleClickTab(box,'projects')" [appHoverTab]="[imgProject, projectDescription, '#ffa801']">Mes projets</div>
+            <div class="tab-section" (click)="handleClickTab(box,'skills')" [appHoverTab]="[imgSkill, skillDescription,'#FBA7FD']">Skills</div>
+            <div class="tab-section" (click)="handleClickTab(box,'profile')" [appHoverTab]="[imgProfile, profilDescription,'#218c74']">Mon profil</div>
+            <div class="tab-section" (click)="handleClickTab(box,'contact')" [appHoverTab]="[imgContact, contactDescription,'#3c40c6']">Contactez-moi</div>
+        </div>
+        
+    </div>
+    <div>
+        <img #imgProject class="img responsive-image circle animate__animated animate__infinite depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676304504/light-bulb-with-drawing-graph_hg9n8n.jpg" alt="moi" width="250">
+        <img #imgSkill class="img responsive-image circle animate__animated animate__infinite depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315574/skills_oya14l.jpg" alt="moi" width="250">
+        <img #imgProfile class="img responsive-image circle animate__animated animate__infinite depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676305271/green-gradient-designify_2_vdayyd.png" alt="moi" width="250">
+        <img #imgContact class="img responsive-image circle animate__animated animate__infinite depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315916/phone_ixzpex.jpg" alt="moi" width="250">
+    </div>
+
+    <div>
+    
+        <p #projectDescription class="paragraph" >Découvrez certains de mes projets en ligne et/ ou repo Github.</p>
+        <p #skillDescription class="paragraph">Les compétences acquises au fil du temps. En autodidacte ou en formation.</p>
+        <p #profilDescription class="paragraph">Si vous voulez en apprendre un peu plus sur mon parcours.</p>
+        <p #contactDescription class="paragraph">N'hésitez pas à me contacter.</p>
+    </div>
+</div>

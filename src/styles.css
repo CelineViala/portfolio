@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    background-attachment: fixed;
+  
+    /* background-image: url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676307290/marble-tile-durable-material-background_jqcqmn.jpg'); */
+    color:rgb(153, 147, 147);
+    height: 100vh;
+    max-height: 100vh;
+    background-size:cover;
+    background-size: 100%;
+    font-size: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+
+    
+}
+
+h1, h2{
+   color:rgb(153, 147, 147);
+   text-align: center;
+   font-weight: 900;
+
+}
+h1{
+   font-size: 8rem;
+}
+
+h2{
+   font-size: 6rem;
+}
+.letter-color-yellow{
+    color: #ffa801;
+    text-shadow: 1px 1px 1px #aa6f02;; 
+ }
+ .letter-color-blue{
+    color: #3c40c6;
+ 
+    text-shadow: 1px 1px 1px #0d105e;
+ 
+ }
+ .letter-color-green{
+    color: #218c74;
+    text-shadow: 1px 1px 1px #044133;
+ }
+ .letter-color-pink{
+    color:#FBA7FD;
+    text-shadow: 1px 1px 1px #59015a;
+ }
+
+ @media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
+   body{
+      font-size: 20px;
+      background-size: 100%;
+   }
+}

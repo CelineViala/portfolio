@@ -1,0 +1,124 @@
+.text{
+    overflow:scroll;
+    font-size: 2rem;
+    color: rgb(153, 147, 147);;
+    max-height: 90vh;
+    height:90vh;
+    width: 70%;
+    position: relative;
+
+}
+.box-img{
+    margin-top: 2rem;
+    width:60%;
+}
+.box-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title{
+    font-weight: 900;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.content-profile{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.click-me{
+ 
+    font-size: 1rem;
+    display: none;
+    position:absolute;
+    top:55px;
+    left:5px;
+}
+.item{
+    border-radius: 25px;
+    width: fit-content;
+    font-weight: 900;
+    padding: 1rem;
+    margin-left: 25px;
+    border: solid 4px rgb(153, 147, 147);
+    
+}
+.paragraph{
+   display:none;
+
+
+   border-radius: 25px;
+   padding: 1rem;
+
+
+}
+.sign{
+    background-color: rgb(153, 147, 147) ;
+    color:rgb(0,0,0);
+    border-radius: 50%;
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    
+    
+    margin-left: 20px;
+}
+
+.img{
+    display: none;
+}
+
+.complement{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.complement-blue{
+    color: #3c40c6;
+}
+.complement-yellow{
+    color: #ffa801;
+}
+.complement-pink{
+    color: #218c74;;
+}
+.complement-green{
+    color: #FBA7FD;;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+
+    .title{
+        text-align: center;
+        font-size: 4rem;
+    }
+    .img-profile{
+        width: 300px;
+    }
+    .content-profile{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .item{
+        font-size: smaller;
+        background-color: #218c74;
+        color:black
+    }
+    .paragraph{
+        font-size: 1rem;
+        background-color: rgba(255,255,255,0.8);
+        color:black;
+        margin: auto;
+    }
+
+}
+
