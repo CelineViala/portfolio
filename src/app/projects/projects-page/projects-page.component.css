@@ -1,28 +1,73 @@
 .img-project{
-    width:100%;
+    width:80%;
     display: block;
- 
+    position: relative;
+    
+
 }
+
 .box{
     position: relative;
     width: 100%;
     margin-bottom: 15rem;
 }
+.boxParagraph{
+    border-radius: 25px;
+    padding: 1em;
+    background-color: rgba(255,255,255,0.8);
+    color:rgb(105, 102, 102);
+}
+.boxStack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    width: 100%;
+    gap:0.5rem
+}
+.link{
+   
+    font-weight: 900;
+    
+    margin-top: 50%;
+    margin-bottom: 50%;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+    text-align: center; 
+}
+.icon-link{
+    font-size: 5rem;
+}
+.techno{
+    background-color: rgb(202, 194, 194);
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 1px rgb(105, 102, 102);
 
+    padding: 1rem;
+}
 .intro{
     font-size: 2rem;
     height:100vh;
+    font-weight: 900;
     text-align: right;
     width:50%;
     margin-left: 30%;;
 
 }
-
 .content-project{
-  
+    font-size: 2rem;
    
     overflow-y: hidden;
-    
-
-    
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+    .intro, .content-project{
+        font-size: 1rem;
+    }
+    .box {
+       margin-bottom: 5rem; 
+    }
+}
+

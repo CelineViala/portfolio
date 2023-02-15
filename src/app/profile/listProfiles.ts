@@ -38,7 +38,7 @@ export const listItemsCareer: ItemCareer[] = [
         colorName:'pink',
         picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png",
         anim:"animate__fadeInTopRight",
-        description: "J'ai signé une rupture conventionnelle en 2021."
+        description: "J'ai signé une rupture conventionnelle en 2021 afin de pouvoir exercer le métier qui me passionne."
        
     },
     {

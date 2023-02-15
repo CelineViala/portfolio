@@ -1,6 +1,6 @@
 .navbar{
     background-color: rgba(232, 243, 252, 0.2);
-    color: ;
+    
 }
 
 .burger{
@@ -11,12 +11,7 @@
 }
 
 
-h3{
-   font-size:x-large;
-    text-align: center;
-    text-shadow: 3px 3px 2px #ACAAD9; 
-  
-}
+
 
 .cloud{
     position: absolute;
