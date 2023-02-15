@@ -9,7 +9,12 @@
 .box{
     position: relative;
     width: 100%;
-    margin-bottom: 15rem;
+    margin-bottom: 18rem;
+}
+.boxLink{
+    display: flex;
+    justify-content:center;
+    align-items: center;
 }
 .boxParagraph{
     border-radius: 25px;
@@ -29,14 +34,16 @@
 .link{
    
     font-weight: 900;
-    
-    margin-top: 50%;
-    margin-bottom: 50%;
+
     text-shadow: 1px 1px 1px rgb(0,0,0);
     text-align: center; 
 }
-.icon-link{
-    font-size: 5rem;
+.iconLink{
+    font-size: 2rem;
+    vertical-align: middle;
+}
+.git{
+    width:40px;
 }
 .techno{
     background-color: rgb(202, 194, 194);
@@ -68,6 +75,9 @@
     }
     .box {
        margin-bottom: 5rem; 
+    }
+    .git{
+        width: 25px;
     }
 }
 

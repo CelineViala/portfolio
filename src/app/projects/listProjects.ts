@@ -13,6 +13,21 @@ export const listProjects: Project[] = [
     // urlSite?:string;
     // urlGithub?:string;
     {
+        id: 5,
+        name: "Inkable",
+        alt: "image Inkable",
+        color:'#ffa801',
+        colorName:'letter-color-blue',
+        position:"left:-1%",
+        ratio:-1.2,
+        picture: "https://res.cloudinary.com/dhpiuysko/image/upload/v1676472855/inkable_screenshot1_caubqb.jpg",
+        description: ["Une application réalisée de A à Z en équipe (3 personnes) dans le cadre d'un projet de fin de formation à l'école O'Clock","L'objectif était de proposer une plateforme de mise en relation de professionnels du tatouage et de futurs clients potentiels."],
+        stack:["Node.js","Express.js","PostgreSQL","Vue.js 3","FullCalendar","Bootstrap"],
+        online:false,
+        urlGithub:"https://github.com/CelineViala/inkable",
+       
+    },
+    {
         id: 1,
         name: "Mission-Lecture.fr",
         alt: "image mission lecture",
@@ -21,11 +36,12 @@ export const listProjects: Project[] = [
         ratio:1.2,
         position:"left:0%;",
         picture: "https://res.cloudinary.com/dhpiuysko/image/upload/v1676391564/ml_nd5ipd.jpg",
-        description: ["Mon premier 'grand' projet.", "Un site de jeux de lecture pour enfants de niveau primaire."],
+        description: ["Un site 100% autodidacte.", "J'ai inventé et codé des jeux de lecture pour enfants de niveau primaire."],
         stack:["PHP","Symfony4","MySQL","Javascript","HTML/Twig","CSS"],
         online:true,
         urlSite:"https://mission-lecture.fr/"  
     },
+   
     {
         id: 2,
         name: "Les tours de Hanoï",
@@ -92,19 +108,20 @@ export const listProjects: Project[] = [
     },
     {
         id: 5,
-        name: "Inkable",
-        alt: "image Inkable",
+        name: "Dev' diary",
+        alt: "image dev'diary",
         color:'#ffa801',
-        colorName:'letter-color-blue',
-        position:"left:-1%",
+        colorName:'letter-color-yellow',
+        position:"left:0%",
         ratio:-1.2,
-        picture: "https://res.cloudinary.com/dhpiuysko/image/upload/v1676472855/inkable_screenshot1_caubqb.jpg",
-        description: ["Une application réalisée de A à Z en équipe (3 personnes) dans le cadre d'un projet de fin de formation à l'école O'Clock","L'objectif était de proposer une plateforme de mise en relation de professionnels du tatouage et de futurs clients potentiels."],
-        stack:["Node.js","Express.js","PostgreSQL","Vue.js 3","FullCalendar","Bootstrap"],
+        picture: "https://res.cloudinary.com/dhpiuysko/image/upload/v1676480187/diary_screenshot1_chhbfk.jpg",
+        description: ["Une application pour garder une trace de ses recherches de veille technologique et/ou résolution de bugs"],
+        stack:["HTML/CSS","Javascript","Express.js","Node.js","PostgreSQL"],
         online:false,
         urlGithub:"https://github.com/CelineViala/nim",
        
     },
+    
     
     
 ];

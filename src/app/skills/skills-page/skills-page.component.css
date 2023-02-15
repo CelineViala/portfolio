@@ -1,0 +1,33 @@
+.content-skills{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+
+.text{
+   
+}
+
+body {
+    background-color: #222;
+    width : 50%;
+  }
+  
+  p {
+    color : white;
+  }
+  .back {
+      background: none !important;
+  }
+  
+  .skill {
+      background: linear-gradient(90deg, #81EBF5 0%, #31B1CF 100%);
+      text-align: right;
+      padding-right: 20px;
+      line-height: 30px;
+      border-radius: 0 20px 20px 0;
+  }
+
+  .skillbar-bar{
+    width: 0%;
+  }

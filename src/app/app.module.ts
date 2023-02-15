@@ -8,6 +8,7 @@ import { HoverTabDirective } from './hover-tab.directive';
 import { ProfilePageComponent } from './profile/profile-page/profile-page.component';
 import { ProjectsPageComponent } from './projects/projects-page/projects-page.component';
 import { ParallaxDirective } from './common/parallax.directive';
+import { SkillsPageComponent } from './skills/skills-page/skills-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ParallaxDirective } from './common/parallax.directive';
     HoverTabDirective,
     ProfilePageComponent,
     ProjectsPageComponent,
-    ParallaxDirective
+    ParallaxDirective,
+    SkillsPageComponent
   ],
   imports: [
     BrowserModule,

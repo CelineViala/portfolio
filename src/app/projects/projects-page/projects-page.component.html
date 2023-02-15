@@ -20,8 +20,8 @@
                         <p class="techno {{item.colorName}}" *ngFor="let techno of item.stack;">{{techno}}</p>
 
                     </div>
-                    <p *ngIf="item.urlSite" class="center"><a class="link {{item.colorName}}" [href]="item.urlSite" target="_blank">Voir le site</a></p> 
-                    <p *ngIf="item.urlGithub"class="center"><a class="link {{item.colorName}}" [href]="item.urlGithub" target="_blank">Repo Github</a></p> 
+                    <p *ngIf="item.urlSite" class="center boxLink"><a class="link {{item.colorName}}" [href]="item.urlSite" target="_blank">Voir le site <i class="material-icons iconLink">navigate_next</i></a></p> 
+                    <p *ngIf="item.urlGithub"class="center"><a class="link {{item.colorName}}" [href]="item.urlGithub" target="_blank">Repo Github <img src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676479173/icon-github_j8naou.jpg" class="img-responsive circle git" alt="" width="40"></a></p> 
                 </div>
                 <img  appParallax [ratio]="item.ratio"  class="img-project" [src]="item.picture" [alt]="item.alt" [style]="item.position">
             </div>
