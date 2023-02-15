@@ -1,6 +1,6 @@
 <div class="row text">
     <div #box class="content-project  col m10 offset-m1 s12">
-        <h1 class="title"><span class="letter-color-yellow">M</span>es <span class="letter-color-blue">p</span>rojets</h1>
+        <h1 appParallax [ratio]="1.2" class="title"><span class="letter-color-yellow">M</span>es <span class="letter-color-blue">p</span>rojets</h1>
 
         <div class="intro">
             <img class="img-responsive circle" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676304504/light-bulb-with-drawing-graph_hg9n8n.jpg" alt="image projets" width="200">
@@ -21,7 +21,7 @@
 
                     </div>
                     <p *ngIf="item.urlSite" class="center boxLink"><a class="link {{item.colorName}}" [href]="item.urlSite" target="_blank">Voir le site <i class="material-icons iconLink">navigate_next</i></a></p> 
-                    <p *ngIf="item.urlGithub"class="center"><a class="link {{item.colorName}}" [href]="item.urlGithub" target="_blank">Repo Github <img src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676479173/icon-github_j8naou.jpg" class="img-responsive circle git" alt="" width="40"></a></p> 
+                    <p *ngIf="item.urlGithub"class="center"><a class="link {{item.colorName}}" [href]="item.urlGithub" target="_blank">Voir sur Github <img src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676479173/icon-github_j8naou.jpg" class="img-responsive circle git" alt="" width="40"></a></p> 
                 </div>
                 <img  appParallax [ratio]="item.ratio"  class="img-project" [src]="item.picture" [alt]="item.alt" [style]="item.position">
             </div>

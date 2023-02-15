@@ -5,7 +5,7 @@
 }
 
 .text{
-   
+   width: 70%;
 }
 
 body {
@@ -21,13 +21,42 @@ body {
   }
   
   .skill {
-      background: linear-gradient(90deg, #81EBF5 0%, #31B1CF 100%);
+      background: #218c74;
       text-align: right;
       padding-right: 20px;
       line-height: 30px;
       border-radius: 0 20px 20px 0;
   }
-
+  .label{
+    font-weight: 900;
+    font-size: 2rem;
+    vertical-align: middle;
+    display: flex;
+    gap:2rem;
+    background-color: rgb(201, 201, 201);
+    color :black;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  .skillTitle{
+    display: flex;
+    align-items: baseline;
+  }
   .skillbar-bar{
     width: 0%;
+    position: relative;
+    top:0;
+    z-index: 2;
+  }
+
+  .skillBox{
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  .skillbar-back{
+    width:100%;
+
+    background: rgb(153, 147, 147);
+    position:absolute;
+    top:0
   }

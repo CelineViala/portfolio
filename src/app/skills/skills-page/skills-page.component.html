@@ -1,32 +1,26 @@
 <div class="row text">
     <div class="content-profile  col m12 s12">
         <div class="content-skills">
-            <h1 class="title"><span class="letter-color-blue">M</span>es <span class="letter-color-pink">c</span>ompé<span class="letter-color-green">t</span>ences</h1>
+            <h1 appParallax [ratio]="1.2" class="title"><span class="letter-color-blue">S</span>k<span class="letter-color-pink">i</span>l<span class="letter-color-green">ls</span></h1>
             <div class="box-img">
                 <img  class="img-profile img-responsive circle animate__animated animate__flipInX" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315696/skills_dtaf3j.jpg" alt="moi" width="300">
             </div>
         </div>
         <div class="text container"> 
-            <p class="wide">HTML 5</p>
+            <ng-container *ngFor="let skill of listSkills" >
 
-  <div  class="skill skillbar-bar" data-percent="95%" style="height:28px;width:0%"></div>
-
-
-
- <p class="wide">CSS 3</p>
-
-  <div class="skill skillbar-bar" data-percent="55%" style="height:28px;width:0%">55%</div>
-*
-
-
-<p class="wide">Javascript</p>
-
-  <div class="skill skillbar-bar" data-percent="55%" >50%</div>
+                <div class="skillTitle">
+                    <p class="label animate__animated animate__pulse animate__infinite">{{skill.name}} <img  class="img-responsive circle" [src]="skill.picture" [alt]="skill.alt" width="40"></p>
+                    
+                </div>
+                <div class="skillBox">
+                    <div #bar class="skill skillbar-bar" [attr.data-percent]="skill.rate" style="height:28px;width:0%"></div>
+                    <div  class="skill skillbar-back" style="height:28px;"></div>
+                </div>
+            </ng-container>
+            
 
 
-
-<p class="wide">PHP 7</p>
-<div class="skill skillbar-bar" data-percent="50%" style="height:28px;width:0%">50%</div>
 
 
 

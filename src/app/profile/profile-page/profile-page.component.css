@@ -44,6 +44,7 @@
     font-weight: 900;
     padding: 1rem;
     margin-left: 25px;
+    cursor: pointer;
     border: solid 4px rgb(153, 147, 147);
     
 }
