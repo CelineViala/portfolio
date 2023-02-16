@@ -10,12 +10,12 @@
             <ng-container *ngFor="let skill of listSkills" >
 
                 <div class="skillTitle">
-                    <p class="label animate__animated animate__pulse animate__infinite">{{skill.name}} <img  class="img-responsive circle" [src]="skill.picture" [alt]="skill.alt" width="40"></p>
+                    <p class="label animate__animated animate__pulse animate__infinite">{{skill.name}} <img  class="img-responsive circle img-skill" [src]="skill.picture" [alt]="skill.alt" width="40"></p><span #load class="loading">Chargement en cours</span>
                     
                 </div>
                 <div class="skillBox">
-                    <div #bar class="skill skillbar-bar" [attr.data-percent]="skill.rate" style="height:28px;width:0%"></div>
-                    <div  class="skill skillbar-back" style="height:28px;"></div>
+                    <div #bar class="skill skillbar-bar" [attr.data-percent]="skill.rate" style="height:14px;width:0%"></div>
+                    <div  class="skill skillbar-back" style="height:14px;"></div>
                 </div>
             </ng-container>
             

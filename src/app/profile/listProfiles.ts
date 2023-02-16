@@ -7,7 +7,7 @@ export const listItemsCareer: ItemCareer[] = [
         color:'#3c40c6',
         colorName:'blue',
         anim:"animate__fadeInTopLeft",
-        description: "J'ai suivi des études de psychologie en formation initiale jusqu'au niveau du Master 1."
+        description: "J'ai suivi des études de psychologie jusqu'au niveau du Master 1."
        
     },
     {
@@ -16,7 +16,7 @@ export const listItemsCareer: ItemCareer[] = [
         color:'#ffa801',
         colorName:'yellow',
         anim:"animate__fadeInTopRight",
-        description: "J'ai été Auxiliaire de Vie scolaire auprès d'enfants en situation de handicap."
+        description: "Dans mon ancienne vie professionnelle, j'étais Accompagnante d'Élèves en Situation de Handicap."
        
     },
     {
@@ -44,7 +44,7 @@ export const listItemsCareer: ItemCareer[] = [
         colorName:'green',
         anim:"animate__fadeInTopLeft",
         description: "En 2022, j'ai suivi une formation de développeur Fullstack Javascript | 798 heures de formation intensive.",
-        complement:["Javascript Client Side & Server Side","Spécialisation Back-end/API", "Projet en équipe (158h)","Bonnes pratiques","Gestion de projet"],
+        complement:["Javascript Client Side & Server Side","Spécialisation Back-end/API", "Projet en équipe (158h)","Gestion de projet","Bonnes pratiques de développement"],
         colorComplement:['yellow','pink','blue',"green","yellow","blue","pink"]
     },
     {

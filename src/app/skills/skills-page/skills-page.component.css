@@ -38,6 +38,9 @@ body {
     padding: 1rem;
     border-radius: 25px;
   }
+  .loading{
+    margin-left: 5rem;
+  }
   .skillTitle{
     display: flex;
     align-items: baseline;
@@ -57,6 +60,24 @@ body {
     width:100%;
 
     background: rgb(153, 147, 147);
+    box-shadow: 1px 1px 1px rgb(0,0,0);
     position:absolute;
     top:0
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+    .label{font-size: 1rem;}
+    .text{
+      width: 100%;
+    }
+    .img-profile{
+      width:140px;
+    }
+    .img-skill{
+      width: 20px;
+    }
+    h1{
+      font-size: 5rem;
+    }
+
   }

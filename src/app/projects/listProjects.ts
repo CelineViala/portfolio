@@ -121,6 +121,20 @@ export const listProjects: Project[] = [
         urlGithub:"https://github.com/CelineViala/nim",
        
     },
+    {
+        id: 5,
+        name: "Index de livre",
+        alt: "image index de livre",
+        color:'#ffa801',
+        colorName:'letter-color-green',
+        ratio:1.2,
+        picture:"https://res.cloudinary.com/dhpiuysko/image/upload/v1676565124/index_kohqwj.jpg",
+        description: ["Un programme qui génère un index automatiquement (dans la console et dans un fichier texte) à partir d'un fichier source et de la liste des mots que l'on veut afficher dans l'index. J'ai pour cela implémenté deux structures de données un ABR (Arbre Binaire de Recherche) et un AVL (arbre équilibré)"],
+        stack:["Java"],
+        online:false,
+        urlGithub:"https://github.com/CelineViala/bookIndex",
+       
+    },
     
     
     

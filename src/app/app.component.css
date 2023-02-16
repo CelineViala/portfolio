@@ -1,15 +1,15 @@
 .navbar{
     background-color: rgba(232, 243, 252, 0.2);
+
     
 }
 
 .burger{
     font-size:50px !important;
-    color:rgb(153, 147, 147);
+    color:rgb(0,0,0);
     
 
 }
-
 
 
 
@@ -82,13 +82,13 @@
     .cloud{
         display: none;
     }
-    h1,h2{
+    /* h1,h2{
         font-size: 25px;
     }
     h3{
         font-size:18px;
-    }
-    .container{
+    } */
+    /* .container{
         font-size: 20px;
         margin-bottom: 5em;
     }
@@ -96,5 +96,5 @@
         width:60px;
         top:10%;
         right:0%
-    }
+    } */
 }

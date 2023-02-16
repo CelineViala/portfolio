@@ -25,11 +25,11 @@ export class HomePageComponent {
     this.document.body.style.backgroundImage=""
       let initialWidth=this.bulle.nativeElement.width;
       const idInter=setInterval(()=>{
-       
+        
         let currentPosBottom=+(this.bulle.nativeElement.style.bottom.split("%")[0])
-        if (currentPosBottom!=10)
+        if (this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2>0)
         {
-          let currentPosLeft=+(this.bulle.nativeElement.style.left.split("%")[0])
+         
           this.bulle.nativeElement.style.bottom = currentPosBottom+1+'%';
           this.bulle.nativeElement.style.width=`${this.bulle.nativeElement.width+10}px`;
         }else{

@@ -1,14 +1,14 @@
-<div class="row text">
+<div class="row text animate__animated animate__fadeInLeft">
     <div class="content-profile  col m12 s12">
         <div>
             <div class="box-img">
-                <img  class="img-profile img-responsive circle animate__animated animate__flipInX" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676305271/green-gradient-designify_2_vdayyd.png" alt="moi" width="400">
+                <img  class="img-profile img-responsive circle animate__animated animate__flipInX" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676548274/profil_qgisre.png" alt="moi" width="400">
                 <h1 class="title"><span class="letter-color-yellow">M</span>on <span class="letter-color-blue">p</span>rofil</h1>
             </div>
         </div>
         <div class="text"> 
             <ng-container *ngFor="let item of listItems;let i=index">
-                <p class="item animate__animated {{item.anim}}" (click)="toggleItem(ii,iii)" [appHoverTab]="[null,null,item.color]" >{{item.name}}<span #iii class="animate__animated animate__flash animate__repeat-1 sign">+</span></p>
+                <p class="item animate__animated animate__delay-1s {{item.anim}}" (click)="toggleItem(ii,iii)" [appHoverTab]="[null,null,item.color]" >{{item.name}}<span #iii class="animate__animated animate__delay-2s animate__flash animate__repeat-1 sign">+</span></p>
                 <div #ii class="paragraph">
                     <p >{{item.description}}</p>
                     <ul>

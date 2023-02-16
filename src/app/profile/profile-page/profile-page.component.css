@@ -1,16 +1,16 @@
 .text{
     overflow:scroll;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: rgb(153, 147, 147);;
     max-height: 90vh;
-    height:90vh;
-    width: 70%;
+    height:100vh;
+    width:100%;
     position: relative;
 
 }
 .box-img{
     margin-top: 2rem;
-    width:60%;
+
 }
 .box-img img{
     display: block;
@@ -25,22 +25,15 @@
 }
 .content-profile{
     display: flex;
+    width:100%;
     gap: 2em;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.click-me{
- 
-    font-size: 1rem;
-    display: none;
-    position:absolute;
-    top:55px;
-    left:5px;
-}
 .item{
     border-radius: 25px;
-    width: fit-content;
+    width: 70%;
     font-weight: 900;
     padding: 1rem;
     margin-left: 25px;
@@ -75,10 +68,11 @@
 }
 
 .complement{
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: center;
     font-weight: 900;
     margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
 }
 
 .complement-blue{
@@ -93,15 +87,12 @@
 .complement-green{
     color: #FBA7FD;;
 }
-
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+    
     .text{
         width: 100%;
     }
-    .title{
-        text-align: center;
-        font-size: 4rem;
-    }
+    
     .img-profile{
         width: 300px;
     }
@@ -114,7 +105,10 @@
     .item{
         font-size: smaller;
         background-color: #218c74;
-        color:black
+        color:black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .paragraph{
         font-size: 1rem;
@@ -122,6 +116,11 @@
         color:black;
         margin: auto;
     }
-
+    
+}
+@media only screen and (min-device-width : 1600px){
+    .text{
+        width: 70%;
+    }
 }
 

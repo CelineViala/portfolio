@@ -3,7 +3,7 @@
     bottom:0;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    width:300px;
+    width:20%;
 
 }
 
@@ -29,6 +29,7 @@
     left:32%;
 }
 .paragraph{
+    
     display:none;
     position: absolute;
     font-size: 35px;
@@ -54,22 +55,26 @@ b2{
     gap:1rem;
     justify-content: flex-end;
     cursor: pointer;
-
+    
 }
 
 .tab-section{
+    transition: all 0.4s;
     writing-mode: vertical-rl;
     text-shadow: 3px 2px 1px rgba(46, 44, 44, 0.9); 
     padding: 1rem;
     border-radius: 25px;
     font-size: 38px;
 }
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 700px) {
     h1{
         font-size: 3rem;
         text-shadow: 1px 1px 1px rgba(46, 44, 44, 0.9); 
     }
-    
+    .bulle{
+        width:30%;
+    }
     h2{
         font-size: 2.7rem;
         text-shadow: 1px 1px 1px rgba(46, 44, 44, 0.9); 
@@ -82,7 +87,7 @@ b2{
         gap:2.5rem;
     }
     .tab-section{
-        transition: all 5s;
+        
         text-shadow: 1px 1px 1px rgba(46, 44, 44, 0.9); 
         display: inline-block;
         writing-mode: unset;
@@ -109,3 +114,18 @@ b2{
     }
 }
 
+@media only screen and (min-device-width : 701px) and (max-device-width : 1200px) {
+    .title{
+        font-size: 6rem;  
+    }
+    .img,.paragraph{
+        width:0;
+        height: 0;
+    }
+    .tab-section{
+        background-color: #3c40c6;
+    }
+    .sub{
+        font-size: 4rem;  
+    }
+}

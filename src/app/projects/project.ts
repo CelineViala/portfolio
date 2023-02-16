@@ -8,7 +8,7 @@ export class Project{
     ratio:number;
     position?:string;
     colorName:string;
-    picture: string;
+    picture?: string;
     description?: string[];
     stack?:string[];
     online:boolean;

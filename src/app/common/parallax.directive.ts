@@ -40,7 +40,7 @@ export class ParallaxDirective {
       
      
       this.eleRef.nativeElement.style.setProperty("transform",`translatex(${t}px)`)
-      console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
+      // console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
     // this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
   }
 

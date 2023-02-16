@@ -50,10 +50,30 @@ h2{
     color:#FBA7FD;
     text-shadow: 1px 1px 1px #59015a;
  }
-
+ 
  @media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
    body{
       font-size: 15px;
       background-size: 100%;
+   }
+
+   h1{
+      font-size:4rem;
+   }
+   h2{
+      font-size: 2rem;
+   }
+}
+ @media only screen and (min-device-width : 501px) and (max-device-width : 1200px) {
+   body{
+      font-size: 16px;
+      background-size: 100%;
+   }
+
+   h1{
+      font-size:6rem;
+   }
+   h2{
+      font-size: 4rem;
    }
 }

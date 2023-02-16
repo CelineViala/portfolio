@@ -9,6 +9,7 @@ import { ProfilePageComponent } from './profile/profile-page/profile-page.compon
 import { ProjectsPageComponent } from './projects/projects-page/projects-page.component';
 import { ParallaxDirective } from './common/parallax.directive';
 import { SkillsPageComponent } from './skills/skills-page/skills-page.component';
+import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SkillsPageComponent } from './skills/skills-page/skills-page.component'
     ProfilePageComponent,
     ProjectsPageComponent,
     ParallaxDirective,
-    SkillsPageComponent
+    SkillsPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

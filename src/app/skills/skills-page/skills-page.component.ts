@@ -11,6 +11,7 @@ import { Skill } from './skill';
 export class SkillsPageComponent {
   listSkills:Skill[];
   @ViewChildren('bar') bar: QueryList<ElementRef>
+  @ViewChildren('load') load: QueryList<ElementRef>
 
   constructor(@Inject(DOCUMENT) private document: Document){ 
   }
@@ -36,7 +37,11 @@ export class SkillsPageComponent {
       setTimeout(() => {
         bar.nativeElement.animate(keyframe,options)
         bar.nativeElement.style.width=`${bar.nativeElement.dataset['percent']}`;
+        console.log(this.listSkills[i].since)
         
+        
+        this.load.get(i)!.nativeElement.textContent=this.listSkills[i].since;
+        this.load.get(i)!.nativeElement.style.fontWeight=900;
       }, 500*i)
         
         
