@@ -1,12 +1,20 @@
 .navbar{
     background-color: rgba(232, 243, 252, 0.2);
-
+    width:64px;
+    text-align: center;
+    border-radius: 25px;
+    margin:0.5em;
+    line-height: 64px;
+    height: 64px;
     
 }
 
 .burger{
     font-size:50px !important;
-    color:rgb(0,0,0);
+    color: #3c40c6;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    transition: all 2s;
+   
     
 
 }
