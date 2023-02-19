@@ -19,7 +19,7 @@
 .boxParagraph{
     border-radius: 25px;
     padding: 1em;
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgb(235, 228, 228);
     color:rgb(105, 102, 102);
 }
 .boxStack{
@@ -56,11 +56,11 @@
 }
 .intro{
     font-size: 2rem;
-    height:100vh;
+    height:50vh;
     font-weight: 900;
-    text-align: right;
-    width:62%;
-    margin-left: 35%;
+    text-align: center;
+    
+
     text-shadow: 1px 1px 1px rgb(0,0,0);
 
 }
@@ -69,10 +69,17 @@
    
     overflow-y: hidden;
 }
+.form-goto{
+    font-weight: 900;
+    font-size: xx-large;
+    height: 25vh;
+    text-align: center;
+}
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
     .intro, .content-project{
         font-size: 1rem;
+        
     }
     .box {
        margin-bottom: 5rem; 

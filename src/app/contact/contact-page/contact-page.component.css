@@ -29,7 +29,7 @@
    flex-direction: column;
    gap:5rem;
    font-size: 3rem;
-   text-align: right;
+   text-align: center;
    margin-bottom: 10%;
 }
 .label-link{
@@ -39,8 +39,8 @@
    color: black;
  }
 .link{
-   color:#3c40c6;
-   margin-left: 3rem;
+   color:#ffa801;
+   margin-left: 1rem;
    font-weight: 900;
 }
 .logo{
@@ -49,7 +49,7 @@
 
 
 .content-contact{
-   height: 97vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: space-evenly
@@ -58,4 +58,20 @@
    .img-link{
       width:30%;
    }
+   .intro{
+      font-size: 2rem;
+   }
+   .link, .label-link{
+      font-size: 1rem;
+      text-align: center;
+   }
+   .logo{
+      width: 25px;
+   }
+   .img-contact{
+  
+      width:60%;
+   }
+   
+     
 }

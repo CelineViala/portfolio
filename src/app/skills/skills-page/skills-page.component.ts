@@ -22,7 +22,7 @@ export class SkillsPageComponent {
   ngAfterViewInit(){
     console.log(this.bar)
     const bars=this.bar.toArray()
-    this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676321965/fond_kbwapo.jpg')";
+    // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
 
     bars.forEach((bar,i)=>{
     console.log(bar,bar.nativeElement.dataset['percent'] )

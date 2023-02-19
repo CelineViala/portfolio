@@ -13,6 +13,7 @@
 }
 .title{
     text-align: center;
+    
 }
 .sub{
     text-align: right;
@@ -24,9 +25,9 @@
 .img{
     display:none;
     position: absolute;
-    top: 50%;
+    top: 38%;
     transform: translateY(-50%);
-    left:32%;
+    left:22%;
 }
 .paragraph{
     
@@ -34,9 +35,9 @@
     position: absolute;
     font-size: 35px;
     width:25%;
-    top: 80%;
+    top: 75%;
     transform: translateY(-50%);
-    left:30%;
+    left:20%;
     text-align: right;
     text-shadow: 1px 1px 1px rgb(133, 129, 129);; 
 
@@ -47,18 +48,23 @@
 
 
 b2{
-    left:50%
+    left:50%;
 }
 
 .tabs-section{
+    margin-top: 3%;
     display: none;
-    gap:1rem;
+    gap:5rem;
     justify-content: flex-end;
     cursor: pointer;
+   
     
 }
 
 .tab-section{
+  
+    box-shadow: 30px 32px 66px -3px rgba(247,247,247,0.25);
+    /* margin-right: 55px; */
     transition: all 0.4s;
     writing-mode: vertical-rl;
     text-shadow: 3px 2px 1px rgba(46, 44, 44, 0.9); 

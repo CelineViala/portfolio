@@ -1,5 +1,5 @@
-<div class="row text">
-    <div #box class="content-project  col m10 offset-m1 s12">
+<div class="row text animate__animated  animate__fadeIn">
+    <div #box class="content-project col m10 offset-m1 s12">
         <h1  class="title"><span class="letter-color-yellow">M</span>es <span class="letter-color-blue">p</span>rojets</h1>
 
         <div class="intro">
@@ -7,10 +7,21 @@
             <p>Bienvenue dans la section consacrée à mes projets personnels et de fin de formation. Sans oublier le présent PORTFOLIO.</p>
             <p class="animate__animated animate__pulse animate__infinite">Scrollez vers le bas</p>
         </div>
-
+        <div class="form-goto">
+            <div class="input-field col s12 m6 offset-m3">
+                <select #selectElm (change)="handleSelect(selectElm)">
+                    <option value="" disabled selected>Ou choisir un projet</option>
+                    <ng-container *ngFor="let item of listProjects;let i=index">
+                        <option value="{{item.id}}">{{item.name}}</option>
+                    </ng-container>
+                </select>
+              
+            </div>
+        <button class="waves-effect waves-light btn col 12 m6 offset-m3" (click)="goToProject()">Go to the project </button>
+        </div>
         <ng-container *ngFor="let item of listProjects;let i=index">
             <div class="box">
-                <h2 [class]="item.colorName">{{item.name}}</h2>
+                <h2 id="project-{{item.id}}" [class]="item.colorName">{{item.name}}</h2>
                 <div class="seeMore">
                     <div class="boxParagraph">
                         <p *ngFor="let paragraph of item.description;">{{paragraph}}</p>

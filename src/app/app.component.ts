@@ -1,5 +1,6 @@
-import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
-declare let simpleParallax:any;
+import { Component, ElementRef, Inject, Input, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { DOCUMENT, Location } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -9,22 +10,60 @@ declare let simpleParallax:any;
 })
 export class AppComponent {
   @ViewChild('burger', { static: true }) burger!:ElementRef;
-  private colors=['#ffa801','#3c40c6','#218c74','#FBA7FD']
+  @ViewChild('content', { static: true }) content!:ElementRef;
+
+  private colors=['#ffa801','#3c40c6','#218c74','#FBA7FD'];
+
+  private openedMenu:boolean=false;
+  private previousUrl:string;
   
+
+  constructor(@Inject(DOCUMENT) private document: Document,protected router:Router, private location:Location){
+
+  }
  
   ngOnInit(){
-    let i=0
+    //unallow pinch zoom
+    
+    this.document.addEventListener('wheel', event => {
+      const { ctrlKey } = event
+      if (ctrlKey) {
+         event.preventDefault();
+         return
+      }
+   }, { passive: false })
+
+
+   
+    let i=0,j=0
     setInterval(()=>{
       i+=1
       i%=4
-      this.burger.nativeElement.style.color=this.colors[i]
+      this.burger.nativeElement.style.color=this.colors[i];
+      // this.burger.nativeElement.style.transform="rotate(360deg)";
+
 
     },3000)
-  
+    
   }
-
-  handleClickBurger(){
-    console.log("click")
+  
+  handleClickBurger(previousUrl:string){
+    this.burger.nativeElement.style.transform="rotate(-360deg)";
+    if(this.openedMenu && this.previousUrl){
+      this.router.navigate([this.previousUrl]);
+      this.burger.nativeElement.textContent="menu"
+      this.openedMenu=!this.openedMenu;
+    }
+    else{
+      if( previousUrl!=='/menu')
+      {this.router.navigate([`/menu`]);
+      this.previousUrl=previousUrl;
+      this.burger.nativeElement.textContent="close"
+      this.openedMenu=!this.openedMenu;
+    }
+  }
+  console.log(previousUrl,this.openedMenu)
+    
   }
   
   handleParallax(e:any){

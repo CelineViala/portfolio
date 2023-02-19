@@ -15,6 +15,7 @@ export class HomePageComponent {
   @ViewChild('title', { static: true }) title!:ElementRef;
   @ViewChild('subtitle', { static: true }) subtitle!:ElementRef;
   @ViewChild('tabs', { static: true }) tabs!:ElementRef;
+  @ViewChild('t', { static: true }) t!:ElementRef;
   protected subtitleMsg:string=""
   protected titleMsg:string=""
   constructor(@Inject(DOCUMENT) private document: Document, private router:Router){
@@ -22,6 +23,7 @@ export class HomePageComponent {
   }
   ngOnInit(){
     let i=0
+    
     this.document.body.style.backgroundImage=""
       let initialWidth=this.bulle.nativeElement.width;
       const idInter=setInterval(()=>{
@@ -47,7 +49,7 @@ export class HomePageComponent {
                 this.subtitle.nativeElement.classList.add("animate__rubberBand");
                 this.subtitle.nativeElement.style.display='block';
                 this.tabs.nativeElement.style.display="flex";
-                this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676321965/fond_kbwapo.jpg')"
+                this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')"
               },80);
        
         }
@@ -56,6 +58,7 @@ export class HomePageComponent {
     
   }
   handleClickTab(container:HTMLDivElement,url:string){
+    this.document.body.style.backgroundImage=""
       container.classList.add("animate__fadeOutLeftBig");
       setTimeout(() => {
         this.router.navigate([`/${url}`]);

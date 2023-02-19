@@ -39,7 +39,9 @@ body {
     border-radius: 25px;
   }
   .loading{
-    margin-left: 5rem;
+    margin-left: 2rem;
+    text-shadow: 1px 1px 1px rgb(0,0,0);
+
   }
   .skillTitle{
     display: flex;
@@ -51,7 +53,9 @@ body {
     top:0;
     z-index: 2;
   }
-
+  .box-img{
+    margin-top: 5%;
+  }
   .skillBox{
     position: relative;
     margin-bottom: 2rem;
@@ -66,6 +70,7 @@ body {
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
+    
     .label{font-size: 1rem;}
     .text{
       width: 100%;
