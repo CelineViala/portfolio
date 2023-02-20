@@ -1,0 +1,118 @@
+*{
+    --width-bulle:10%;
+    --stop-X:90%;
+    --stop-Y:77%;
+ 
+}
+
+.bulle{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:20%;
+}
+
+.title{
+    font-size: 7rem;
+    
+}
+.sub{
+    font-size: 9rem;
+}
+/* .bm1{
+    position:absolute;
+    right:-10%;
+    top:-10%;
+    opacity: 0.8;
+    z-index: -1;
+    
+}*/
+.bm2{
+    position:absolute;
+    display: none;
+    z-index: -1;
+    width: var(--width-bulle);
+     height: var(--height-bulle);
+    -webkit-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
+    -moz-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
+    -o-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
+    animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
+    
+} 
+@-webkit-keyframes moveX {
+    from { left: 0; } to { left: var(--stop-X); }
+  }
+  @-moz-keyframes moveX {
+    from { left: 0; } to { left:var(--stop-X); }
+  }
+  @-o-keyframes moveX {
+    from { left: 0; } to { left:var(--stop-X);  }
+  }
+  @keyframes moveX {
+    from { left: 0; } to { left: var(--stop-X);  }
+  }
+  @-webkit-keyframes moveY {
+    from { top: 0; } to { top: var(--stop-Y) }
+  }
+  @-moz-keyframes moveY {
+    from { top: 0; } to { top: var(--stop-Y);  }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: var(--stop-Y);  }
+  }
+  @keyframes moveY {
+    from { top: 0; } to { top: var(--stop-Y);  }
+  }
+.test{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type:y mandatory;
+     
+    user-select: none;
+
+
+}
+.intro{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+
+}
+.home{
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop:always;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.img-scroll{
+    display:none;
+    margin-left: auto;
+    width: 15%;
+    margin-right: auto;
+    
+ 
+}
+
+.cont{
+    
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.paragraph{
+    font-size: 2.5rem;
+    text-align: center;
+
+}
+
+.link{
+    color:rgb(255, 255, 255);
+}

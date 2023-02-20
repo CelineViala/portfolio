@@ -24,8 +24,11 @@ export class HoverTabDirective {
     {
       this.textDescription=this.param[1].textContent;
       this.param[1].style.color=this.param[2];
+      const h= this.param[1].style.height
+      console.log(h)
+      this.param[1].style.height=`${h}px`;
       this.param[1].textContent="";
-      this.param[1].style.display="block";
+      this.param[1].style.visibility="visible";
       let i=0
       this.intervalId=setInterval(()=>{
         if(i<this.textDescription.length)
@@ -51,7 +54,7 @@ export class HoverTabDirective {
     if(this.param[1])
     {
       this.param[1].textContent=this.textDescription;
-      this.param[1].style.display="none";
+      this.param[1].style.visibility="hidden";
       clearInterval(this.intervalId);
     }
   }

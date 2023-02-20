@@ -1,0 +1,52 @@
+
+<div 
+    #box 
+    appScroll [projects]="projects" [profile]="profile" [home]="home" [skills]="skills" [contact]="contact" [bubble]="img2"
+    class="row test animate__animated"
+    
+>
+
+<img class="animate__animated bulle b1" #bulle src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676293991/bulle_izxyvm.png" alt="">
+
+<div #cont class="cont col m8 offset-m2 s12">
+        <img #img2 class="responsive-image img-bulle bm2" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="bulle " width="5%">
+        <div #home class="home" (mousemove)="mouseEffect($event)">
+            <h1   class="animate__animated title" #title><span class="letter-color-blue">C</span>él<span class="letter-color-pink">i</span>ne <span class="letter-color-blue">V</span>ial<span class="letter-color-green">a</span></h1>
+            <!-- <img #img1  class="responsive-image img-bulle bm1" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="bulle " width="30%"> -->
+            <h2 class="animate__animated sub" #subtitle>D<span class="letter-color-green">é</span>velo<span class="letter-color-blue">p</span>peuse <span class="letter-color-yellow">W</span>eb</h2>
+            <p #intro class="intro letter-color-yellow"></p>
+            <img #scroll class="img-scroll animate__animated animate__infinite img-responsive" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676934844/pngwing.com_2_iefajm.png"  alt="">
+        </div>
+        <div #projects class="home">
+            <h2>Mes projets</h2>
+            <p #projectDescription class="paragraph letter-color-yellow" >Découvrez certains de mes projets en ligne et/ ou repo Github.</p>
+            <img  #imgProject class="img responsive-image circle animate__animated animate__infinite animate__pulse depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676304504/light-bulb-with-drawing-graph_hg9n8n.jpg" alt="image ampoule" width="250">
+            <div class="waves-effect waves-light btn"><a class="link" href="/projects">Voir mes projets</a></div>
+        </div>
+        <div #profile class="home">
+            <h2>Mon profil</h2>
+            <p #profilDescription class="paragraph letter-color-green">Si vous voulez en apprendre un peu plus sur mon parcours.</p>
+            <img  #imgProfile class="img responsive-image circle animate__animated animate__infinite animate__pulse depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676548274/profil_qgisre.png" alt="image profil" width="250">
+            <div class="waves-effect waves-light btn"><a class="link" href="/profile">Voir mon profil</a></div>
+        </div>
+        <div #skills class="home">
+            <h2>Skills</h2>
+            <p #skillDescription class="paragraph letter-color-pink">Les compétences acquises au fil du temps. En autodidacte ou en formation.</p>
+            <img  #imgSkill class="img responsive-image circle animate__animated animate__infinite animate__pulse depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315574/skills_oya14l.jpg" alt="image pc rose" width="250">
+            <div class="waves-effect waves-light btn"><a class="link" href="/skills">Voir mes skills</a></div>
+        </div>
+        <div #contact class="home">
+            <h2>Contact</h2>
+            <p #contactDescription class="paragraph letter-color-blue">N'hésitez pas à me contacter.</p>
+            <img  #imgContact class="img responsive-image circle animate__animated animate__infinite animate__pulse depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315916/phone_ixzpex.jpg" alt="image téléphone" width="250">
+            <div class="waves-effect waves-light btn"><a class="link" href="/contact">Voir coordonnées</a></div>
+        </div>
+      
+       
+    </div>
+    
+
+    <div class="box-paragraph">
+       
+    </div>
+</div>

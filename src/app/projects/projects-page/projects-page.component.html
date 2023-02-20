@@ -8,7 +8,7 @@
             <p class="animate__animated animate__pulse animate__infinite">Scrollez vers le bas</p>
         </div>
         <div class="form-goto">
-            <div class="input-field col s12 m6 offset-m3">
+            <div class="input-field col s12 m8 offset-m2">
                 <select #selectElm (change)="handleSelect(selectElm)">
                     <option value="" disabled selected>Ou choisir un projet</option>
                     <ng-container *ngFor="let item of listProjects;let i=index">
@@ -17,7 +17,7 @@
                 </select>
               
             </div>
-        <button class="waves-effect waves-light btn col 12 m6 offset-m3" (click)="goToProject()">Go to the project </button>
+        <button class="waves-effect waves-light btn col s12 m8 offset-m2 btn-goto" (click)="goToProject()">Aller au projet </button>
         </div>
         <ng-container *ngFor="let item of listProjects;let i=index">
             <div class="box">

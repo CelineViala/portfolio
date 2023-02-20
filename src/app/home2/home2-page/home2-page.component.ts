@@ -4,16 +4,20 @@ import { Router } from '@angular/router';
 
 @Component({
   
-  selector: 'app-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls:['./home-page.component.css'],
+  selector: 'app-home2-page',
+  templateUrl: './home2-page.component.html',
+  styleUrls:['./home2-page.component.css'],
   styles: [
   ]
 })
-export class HomePageComponent {
+export class Home2PageComponent {
   @ViewChild('bulle', { static: true }) bulle!:ElementRef;
   @ViewChild('title', { static: true }) title!:ElementRef;
+  @ViewChild('cont', { static: true })  cont!:ElementRef;
+  @ViewChild('scroll', { static: true })  scroll!:ElementRef;
+  
   @ViewChild('subtitle', { static: true }) subtitle!:ElementRef;
+  @ViewChild('intro', { static: true }) intro!:ElementRef;
   @ViewChild('tabs', { static: true }) tabs!:ElementRef;
   @ViewChild('t', { static: true }) t!:ElementRef;
   @ViewChild('img1', { static: true }) img1:ElementRef;
@@ -23,8 +27,8 @@ export class HomePageComponent {
   @ViewChild('img5', { static: true }) img5:ElementRef;
   @ViewChild('hi', { static: true }) hi:ElementRef;
   images:ElementRef[];
-  protected subtitleMsg:string="";
-  protected titleMsg:string="";
+  protected subtitleMsg:string=""
+  protected titleMsg:string=""
   constructor(@Inject(DOCUMENT) private document: Document, private router:Router){
 
   }
@@ -52,17 +56,21 @@ export class HomePageComponent {
                 clearInterval(idInter)
                 
                 this.title.nativeElement.classList.add("animate__rubberBand");
-               
-                this.title.nativeElement.style.display='block';
-                
                 this.subtitle.nativeElement.classList.add("animate__rubberBand");
-                this.subtitle.nativeElement.style.display='block';
-                this.tabs.nativeElement.style.display="flex";
-                // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')"
-                this.images.forEach((node)=>{
-                  node.nativeElement.style.display="block";
-                })
-                this.hi.nativeElement.style.display="flex";
+               
+                this.cont.nativeElement.style.display='flex';
+                const welcomeText="Hello world ! Je suis Céline, développeuse Junior mais passionnée et motivée !";
+                this.img2.nativeElement.style.display="block"
+                this.intro.nativeElement.textContent=""
+                i=0
+                setInterval(()=>{
+                  if (i<welcomeText.length) {this.intro.nativeElement.textContent+=welcomeText[i];i++}
+                  else{ 
+                    this.scroll.nativeElement.style.display="block";
+                    this.scroll.nativeElement.classList.add("animate__pulse");
+
+                  }
+                },35)
               },80);
        
         }
@@ -78,6 +86,16 @@ export class HomePageComponent {
       setTimeout(() => {
         this.router.navigate([`/${url}`]);
       }, 500);
+
+  }
+  mouseEffect(e:any){
+    // console.log("mouse...",e.clientX + window.pageXOffset);
+
+   
+    //   this.img2.nativeElement.style.left=`${e.clientX + window.pageXOffset}px`;
+    //   this.img2.nativeElement.style.top=`${e.clientY + window.pageYOffset}px`;
+      
+   
 
   }
   handleParallax(e:any){

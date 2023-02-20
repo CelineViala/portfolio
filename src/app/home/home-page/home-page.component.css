@@ -6,8 +6,36 @@
     width:20%;
 
 }
-
-
+.bm1{
+    top:20%;
+    left:-5%;
+    width:20%;
+}
+.bm2{
+    width:10%;
+    bottom:10%;
+    right:0%;
+}
+.bm3{
+    width:5%;
+    top:0%;
+    right:10%;
+}
+.bm4{
+    width:15%;
+    top:-25%;
+    left:50%;
+}
+.bm5{
+    width:5%;
+    bottom:0%;
+    left:10%;
+}
+.img-bulle{
+    position: absolute;
+    display: none;
+   
+}
 .title,.sub{
     display: none;
 }
@@ -25,7 +53,7 @@
 .img{
     display:none;
     position: absolute;
-    top: 38%;
+    top: 39%;
     transform: translateY(-50%);
     left:22%;
 }
@@ -40,7 +68,23 @@
     left:20%;
     text-align: right;
     text-shadow: 1px 1px 1px rgb(133, 129, 129);; 
+    
+}
 
+.hi{
+    display:none;
+    font-weight: 800;
+    position: absolute;
+    width: 100%;
+    top:87%;
+    
+    font-size: rem;
+
+}
+
+.hi span{
+   
+    display: block;
 }
 .first{
     display:block;

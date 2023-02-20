@@ -11,6 +11,8 @@ import { ParallaxDirective } from './common/parallax.directive';
 import { SkillsPageComponent } from './skills/skills-page/skills-page.component';
 import { ContactPageComponent } from './contact/contact-page/contact-page.component';
 import { MenuPageComponent } from './menu/menu-page/menu-page.component';
+import { Home2PageComponent } from './home2/home2-page/home2-page.component';
+import { ScrollDirective } from './common/scroll.directive';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { MenuPageComponent } from './menu/menu-page/menu-page.component';
     ParallaxDirective,
     SkillsPageComponent,
     ContactPageComponent,
-    MenuPageComponent
+    MenuPageComponent,
+    Home2PageComponent,
+    ScrollDirective
   ],
   imports: [
     BrowserModule,

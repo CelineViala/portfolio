@@ -1,15 +1,20 @@
 
-<div #box class="row test animate__animated">
-    <div class="cont col m8 offset-m2 s12">
+<div  #box class="row test animate__animated"(mousemove)="handleParallax($event)">
+    <img #img1  class="responsive-image img-bulle bm1" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="">
+    <img #img2 class="responsive-image img-bulle bm2" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="">
+    <img #img3 class="responsive-image img-bulle bm3" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="">
+    <img #img4 class="responsive-image img-bulle bm4" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="">
+    <img #img5 class="responsive-image img-bulle bm5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676887542/bulleMod_msxz0q.png" alt="">
+    <div  class="cont col m8 offset-m2 s12">
         <img class="animate__animated bulle b1" #bulle src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676293991/bulle_izxyvm.png" alt="">
         <h1 class="animate__animated title" #title><span class="letter-color-blue">C</span>él<span class="letter-color-pink">i</span>ne <span class="letter-color-blue">V</span>iala</h1>
         <h2 class="animate__animated sub" #subtitle>D<span class="letter-color-green">é</span>veloppeuse <span class="letter-color-yellow">W</span>eb</h2>
 
         <div #tabs class="tabs-section col s12">
-            <div class="tab-section animate__animated animate__shakeY animate__delay-1s" (click)="handleClickTab(box,'projects')" [appHoverTab]="[imgProject, projectDescription, '#ffa801']">Mes projets</div>
-            <div class="tab-section animate__animated animate__shakeY animate__delay-2s" (click)="handleClickTab(box,'skills')" [appHoverTab]="[imgSkill, skillDescription,'#FBA7FD']">Skills</div>
-            <div class="tab-section animate__animated animate__shakeY animate__delay-3s"(click)="handleClickTab(box,'profile')" [appHoverTab]="[imgProfile, profilDescription,'#218c74']">Mon profil</div>
-            <div class="tab-section animate__animated animate__shakeY animate__delay-4s" (click)="handleClickTab(box,'contact')" [appHoverTab]="[imgContact, contactDescription,'#3c40c6']">Contactez-moi</div>
+            <div class="tab-section " (click)="handleClickTab(box,'projects')" [appHoverTab]="[imgProject, projectDescription, '#ffa801']">Mes projets</div>
+            <div class="tab-section " (click)="handleClickTab(box,'skills')" [appHoverTab]="[imgSkill, skillDescription,'#FBA7FD']">Skills</div>
+            <div class="tab-section "(click)="handleClickTab(box,'profile')" [appHoverTab]="[imgProfile, profilDescription,'#218c74']">Mon profil</div>
+            <div class="tab-section " (click)="handleClickTab(box,'contact')" [appHoverTab]="[imgContact, contactDescription,'#3c40c6']">Contact</div>
         </div>
        
     </div>
@@ -20,8 +25,8 @@
         <img #imgContact class="img responsive-image circle animate__animated animate__infinite depth-5" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315916/phone_ixzpex.jpg" alt="image télephone" width="250">
     </div>
 
-    <div>
-    
+    <div class="box-paragraph">
+        <p #hi class="paragraph hi"><span class="letter-color-green animate__animated animate__fadeInTopLeft">B</span><span class="letter-color-yellow animate__animated animate__fadeInTopRight">i</span><span class="letter-color-green animate__animated animate__fadeInTopLeft">e</span><span class="letter-color-blue animate__animated animate__fadeInTopRight">n</span><span class="letter-color-green  animate__animated animate__fadeInTopLeft">v</span><span class="letter-color-pink  animate__animated animate__fadeInTopRight">e</span><span class="letter-color-yellow  animate__animated animate__fadeInTopLeft">n</span><span class="letter-color-pink  animate__animated animate__fadeInTopRight">u</span><span class="letter-color-blue animate__animated animate__fadeInTopLeft">e</span></p>
         <p #projectDescription class="paragraph" >Découvrez certains de mes projets en ligne et/ ou repo Github.</p>
         <p #skillDescription class="paragraph">Les compétences acquises au fil du temps. En autodidacte ou en formation.</p>
         <p #profilDescription class="paragraph">Si vous voulez en apprendre un peu plus sur mon parcours.</p>

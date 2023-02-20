@@ -31,17 +31,17 @@ export class ParallaxDirective {
     return acc+element.offsetTop
   }
   @HostListener('document:scroll')
-  onWindowScroll(){
-    
-
-      const screenY=scrollY+window.innerHeight/2;
-      const diffY=this.offset(this.eleRef.nativeElement)-scrollY;
-      let t=diffY*-0.2*this.parallaxRatio
+    onWindowScroll(){
       
-     
-      this.eleRef.nativeElement.style.setProperty("transform",`translatex(${t}px)`)
-      // console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
-    // this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
-  }
+
+        const screenY=scrollY+window.innerHeight/2;
+        const diffY=this.offset(this.eleRef.nativeElement)-scrollY;
+        let t=diffY*-0.2*this.parallaxRatio
+        
+      
+        this.eleRef.nativeElement.style.setProperty("transform",`translatex(${t}px)`)
+        // console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
+      // this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
+    }
 
 }
