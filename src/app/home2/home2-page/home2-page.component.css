@@ -31,6 +31,8 @@
     z-index: -1;
     width: var(--width-bulle);
      height: var(--height-bulle);
+     left:0;
+     top:0;
     -webkit-animation: moveX 10s linear 0s infinite alternate ,
                        moveY 7.4s linear 0s infinite alternate;
     -moz-animation: moveX 10s linear 0s infinite alternate , 
