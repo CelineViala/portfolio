@@ -45,7 +45,7 @@ export class AppComponent {
   handleClickBurger(url:string){
     // this.burger.nativeElement.style.transform="rotate(-360deg)";
     
-  
+    window.scrollTo(0,0)
     if (!this.openedMenu) this.router.navigate(["/menu"])
     else {
       if(this.previousUrl=="/menu") this.router.navigate(['/'])
