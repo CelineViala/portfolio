@@ -31,14 +31,19 @@
     z-index: -1;
     width: var(--width-bulle);
      height: var(--height-bulle);
-    -webkit-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
-    -moz-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
-    -o-animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
-    animation: moveX 10s linear 0s infinite alternate, moveY 7.4s linear 0s infinite alternate;
+    -webkit-animation: moveX 10s linear 0s infinite alternate ,
+                       moveY 7.4s linear 0s infinite alternate;
+    -moz-animation: moveX 10s linear 0s infinite alternate , 
+                    moveY 7.4s linear 0s infinite alternate;
+    -o-animation: moveX 10s linear 0s infinite alternate , 
+                  moveY 7.4s linear 0s infinite alternate;
+    animation: moveX 10s linear 0s infinite alternate , 
+               moveY 7.4s linear 0s infinite alternate;
     
 } 
 @-webkit-keyframes moveX {
     from { left: 0; } to { left: var(--stop-X); }
+    
   }
   @-moz-keyframes moveX {
     from { left: 0; } to { left:var(--stop-X); }
