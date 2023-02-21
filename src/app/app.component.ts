@@ -15,8 +15,8 @@ export class AppComponent {
 
   private colors=['#ffa801','#3c40c6','#218c74','#e263e4'];
 
-  private openedMenu:boolean=false;
-  private previousUrl:string;
+  openedMenu:boolean=false;
+  private previousUrl:string="/menu";
   
 
   constructor(@Inject(DOCUMENT) private document: Document,protected router:Router, private location:Location){}
@@ -31,7 +31,7 @@ export class AppComponent {
       }
    }, { passive: false })
 
-
+   
    //change burger color
     let i=0,j=0
     setInterval(()=>{
@@ -42,25 +42,19 @@ export class AppComponent {
     
   }
   
-  handleClickBurger(previousUrl:string){
+  handleClickBurger(url:string){
     // this.burger.nativeElement.style.transform="rotate(-360deg)";
-    this.burger.nativeElement.classList.add("animate__flip");
-    setTimeout(() => {
-      this.burger.nativeElement.classList.remove("animate__flip");
-    }, 500);
-    if(this.openedMenu && this.previousUrl){
-      this.router.navigate([this.previousUrl]);
-      this.burger.nativeElement.textContent="menu";
-      this.openedMenu=!this.openedMenu;
+    
+  
+    if (!this.openedMenu) this.router.navigate(["/menu"])
+    else {
+      if(this.previousUrl=="/menu") this.router.navigate(['/'])
+      else
+      {this.router.navigate([this.previousUrl])}
     }
-    else{
-      if( previousUrl!=='/menu')
-      {this.router.navigate([`/menu`]);
-      this.previousUrl=previousUrl;
-      this.burger.nativeElement.textContent="close";
-      this.openedMenu=!this.openedMenu;
-      }
-    }    
+    this.previousUrl=url
+    console.log(url,this.openedMenu)
+   
   }
   
   handleParallax(e:any){
