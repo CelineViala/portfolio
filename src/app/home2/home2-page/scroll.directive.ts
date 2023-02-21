@@ -35,7 +35,8 @@ export class ScrollDirective {
         this.previousScroll=this.eleRef.nativeElement.scrollTop;
         setTimeout(() => {
           this.direction=0;
-        }, 1000);
+          this.eleRef.nativeElement.style.overflowY="scroll"
+        }, 900);
       }
       if(this.direction==0 && this.eleRef.nativeElement.scrollTop<this.previousScroll){
         this.direction=-1
@@ -46,15 +47,18 @@ export class ScrollDirective {
         this.previousScroll=this.eleRef.nativeElement.scrollTop;
         setTimeout(() => {
           this.direction=0;
+          this.eleRef.nativeElement.style.overflowY="scroll"
      
           
-        }, 1000);
+        }, 900);
       }
       
       if (this.initial!=0)
-        this.bubble.style.opacity=0
-        else
-        this.bubble.style.opacity=1
+      {  this.bubble.style.opacity=0}
+        else{
+        this.bubble.style.opacity=1}
+      console.log(scrollY)
+      this.eleRef.nativeElement.style.overflowY="hidden"
       this.eleRef.nativeElement.scrollTop=this.previousScroll
      
     }

@@ -1,4 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+   --width-bulle:200px;
+   --stop-X:calc(100% - var(--width-bulle));
+   --stop-Y:calc(100% - var(--width-bulle));
+   --yellow:#ffa801;
+   --blue:#3c40c6;
+   --green:#218c74;
+   --pink:#e263e4;
+   --beige:rgb(153,147,147);
+   --neon-beige:0 0 7px #fff, 
+   0 0 10px #fff, 
+   0 0 42px var(--beige),   
+   0 0 77px var(--beige), 
+   0 0 100px var(--beige);
+   --neon-pink:0 0 7px #fff, 
+   0 0 10px #fff, 
+   0 0 42px var(--pink),   
+   0 0 77px var(--pink), 
+   0 0 100px var(--pink);
+
+   --neon-yellow:0 0 7px #fff, 
+   0 0 10px #fff, 
+   0 0 42px var(--yellow),  
+   0 0 77px var(--yellow), 
+   0 0 100px var(--yellow);
+
+   --neon-green:0 0 7px #fff, 
+   0 0 10px #fff, 
+   0 0 42px var(--green),   
+   0 0 77px var(--green), 
+   0 0 100px var(--green);
+
+   --neon-blue:0 0 7px #fff, 
+   0 0 10px #fff, 
+   0 0 42px var(--blue),   
+   0 0 77px var(--blue), 
+   0 0 100px var(--blue);
+
+}
 body{
     font-family: 'Montserrat', sans-serif;
     background-color: black;
@@ -32,28 +71,69 @@ h1{
 h2{
    font-size: 6rem;
 }
+.btn-app{
+   padding:0.5em;
+   border-radius: 25px;
+   font-size: 1.5rem;
+   color: black;
+}
+
+.btn-app:hover{
+   text-shadow: var(--neon-beige);
+}
+.color-yellow{
+   color:var(--yellow);
+}
+.color-blue{
+   color:var(--blue);
+}
+.color-pink{
+   color:var(--pink);
+}
+.color-green{
+   color:var(--green);
+}
+.color-beige{
+   color:rgb(107, 103, 103);
+  
+}
+.bg-blue{
+   background-color: var(--blue);
+}
+
+.bg-yellow{
+   background-color: var(--yellow);
+}
+.bg-green{
+   background-color: var(--green);
+}
+
+.bg-pink{
+   background-color: var(--pink);
+}
+
 .letter-color-yellow{
-    color: #ffa801;
-    text-shadow: 1px 1px 1px #aa6f02;; 
+    color: var(--yellow);
+    text-shadow: var(--neon-yellow);
  }
  .letter-color-blue{
-    color: #3c40c6;
- 
-    text-shadow: 1px 1px 1px #0d105e;
+    color: var(--blue);
+    text-shadow: var(--neon-blue);
  
  }
  .letter-color-green{
-    color: #218c74;
-    text-shadow: 1px 1px 1px #044133;
+    color: var(--green);
+    text-shadow: var(--neon-green);
  }
  .letter-color-pink{
-    color:#FBA7FD;
-    text-shadow: 1px 1px 1px #59015a;
+    color:var(--pink);
+    text-shadow: var(--neon-pink);
  }
  .letter-color-beige{
     color:rgb(107, 103, 103);
-    text-shadow: 1px 1px 1px #585858;
+    text-shadow: var(--neon-pink);
  }
+ 
  
  @media only screen and (min-device-width : 320px) and (max-device-width : 500px) {
    body{
@@ -62,13 +142,13 @@ h2{
    }
 
    h1{
-      font-size:4rem;
+      font-size:5rem;
    }
    h2{
-      font-size: 2rem;
+      font-size: 3rem;
    }
 }
- @media only screen and (min-device-width : 501px) and (max-device-width : 1200px) {
+ /* @media only screen and (min-device-width : 501px) and (max-device-width : 1200px) {
    body{
       font-size: 16px;
     
@@ -80,4 +160,4 @@ h2{
    h2{
       font-size: 4rem;
    }
-}
+} */

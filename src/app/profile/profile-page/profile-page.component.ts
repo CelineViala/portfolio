@@ -13,25 +13,19 @@ export class ProfilePageComponent {
   sign:string="+";
   listItems:ItemCareer []|undefined;
 
-  constructor(@Inject(DOCUMENT) private document: Document, private router:Router){
-
-  }
+  constructor(){}
   ngOnInit(){
-    this.listItems=listItemsCareer;
-    // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
-    
+    this.listItems=listItemsCareer;    
   }
   toggleItem(paragraph:HTMLParagraphElement,sign:HTMLSpanElement){
     if(paragraph.style.display=="block")
     {  
-      paragraph.style.display="none"
-      sign.textContent='+'}
-      else
-      {
-        paragraph.style.display="block"
-        sign.scrollIntoView();
-        sign.textContent='-'
-
+      paragraph.style.display="none";
+      sign.textContent='+';
+    }else{
+      paragraph.style.display="block";
+      sign.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+      sign.textContent='-';
     }
 
     

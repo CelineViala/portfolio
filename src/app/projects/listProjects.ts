@@ -32,7 +32,7 @@ export const listProjects: Project[] = [
         name: "Mission-Lecture.fr",
         alt: "image mission lecture",
         color:'#3c40c6',
-        colorName:'letter-color-blue',
+        colorName:'letter-color-yellow',
         ratio:1.2,
         position:"left:0%;",
         picture: "https://res.cloudinary.com/dhpiuysko/image/upload/v1676391564/ml_nd5ipd.jpg",
@@ -133,6 +133,20 @@ export const listProjects: Project[] = [
         stack:["Java"],
         online:false,
         urlGithub:"https://github.com/CelineViala/bookIndex",
+       
+    },
+    {
+        id: 9,
+        name: "Portfolio",
+        alt: "image portfolio",
+        color:'#ffa801',
+        colorName:'letter-color-pink',
+        ratio:-1.2,
+        picture:"https://res.cloudinary.com/dhpiuysko/image/upload/v1676990708/home_e1jyvu.jpg",
+        description: ["La création de ce portfolio m'a permis de me familiariser avec Typescript et d'apprendre à utiliser Angular"],
+        stack:["HTML∕CSS", "Angular","Typescript"],
+        online:true,
+        
        
     },
     

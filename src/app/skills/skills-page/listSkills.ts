@@ -92,6 +92,15 @@ export const listSkills: Skill[] =[
         picture: 'https://res.cloudinary.com/dhpiuysko/image/upload/v1676570411/postgresql-database-logo-computer-icons-replication-software-developer-c58ad9bb5d3ba67754ac899f42d4bc52_fr92fn.png',
         rate:'75%'
     },
+
+    {
+        name:'Symfony',
+        alt: 'logo Symfony',
+        type:'Back-end',
+        since: 'Utilisé sur un projet (Mission-Lecture)',
+        picture: 'https://res.cloudinary.com/dhpiuysko/image/upload/v1676989375/pngegg_bl9z7t.png',
+        rate:'55%'
+    },
     {
         name:'Vue.js',
         alt: 'logo Vue.js',
@@ -115,5 +124,13 @@ export const listSkills: Skill[] =[
         since: 'Apprentissage en cours (2023), utilisé sur le site présent',
         picture: 'https://res.cloudinary.com/dhpiuysko/image/upload/v1676570972/5bbc0f82754ff-ce4dd31a66bbe0ffc840dd6eac186fb2_chpzru.png',
         rate:'40%'
+    },
+    {
+        name:'Git/Github',
+        alt: 'logo Github',
+        type:'Autre',
+        since: 'Utilisé régulièrement depuis 2022',
+        picture: 'https://res.cloudinary.com/dhpiuysko/image/upload/v1676479173/icon-github_j8naou.jpg',
+        rate:'70%'
     },
 ]

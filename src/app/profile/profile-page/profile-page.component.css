@@ -9,7 +9,10 @@
 
 }
 .box-img{
+    margin-top: 1rem;
     display: flex;
+    width: 100%;
+    gap: 4rem;
     align-items: center;
     
 
@@ -28,6 +31,7 @@
 }
 .content-profile{
     display: flex;
+    flex-direction: column;
     width:100%;
     gap: 2em;
     justify-content: space-between;
@@ -79,16 +83,16 @@
 }
 
 .complement-blue{
-    color: #3c40c6;
+    color: var(--blue);
 }
 .complement-yellow{
-    color: #ffa801;
+    color: var(--yellow);
 }
 .complement-pink{
-    color: #218c74;;
+    color: var(--pink);
 }
 .complement-green{
-    color: #FBA7FD;;
+    color: var(--green);
 }
 @media only screen and (min-device-width : 320px) and (max-device-width : 1000px) {
     

@@ -39,7 +39,7 @@
    color: black;
  }
 .link{
-   color:#ffa801;
+   color:var(--yellow);
    margin-left: 1rem;
    font-weight: 900;
 }
@@ -51,6 +51,7 @@
 .content-contact{
    height: 100vh;
    display: flex;
+   scroll-behavior: smooth;
    flex-direction: column;
    justify-content: space-evenly
 }

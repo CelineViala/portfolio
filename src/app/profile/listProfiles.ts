@@ -22,7 +22,7 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 3,
         name: "Autodidacte",
-        color:'#FBA7FD',
+        color:'#e263e4',
         colorName:'pink',
         anim:"animate__fadeInTopLeft",
         description: "Passionnée d'informatique et de programmation, j'ai commencé à apprendre à coder en autodidacte en parallèle de mon métier d'AESH à partir de 2018."
@@ -31,7 +31,7 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 3,
         name: "Reconversion",
-        color:'#FBA7FD',
+        color:'#e263e4',
         colorName:'pink',
         anim:"animate__fadeInTopRight",
         description: "J'ai signé une rupture conventionnelle en 2021 afin de pouvoir exercer le métier qui me passionne."
@@ -65,7 +65,7 @@ export const listItemsCareer: ItemCareer[] = [
         colorName:'green',
         anim:"animate__fadeInTopRight",
        
-        description: "En Janvier 2023, j'ai obtenu le titre de Développeur Web et Web Mobile",
+        description: "En Janvier 2023, j'ai obtenu le titre de Développeur Web et Web Mobile.",
         complement:["Délivré par le Ministère du travail","Equivalent Bac+2"],
         colorComplement:['yellow','blue']
        

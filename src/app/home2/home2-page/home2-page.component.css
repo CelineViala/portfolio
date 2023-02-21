@@ -1,9 +1,4 @@
-*{
-    --width-bulle:10%;
-    --stop-X:90%;
-    --stop-Y:77%;
- 
-}
+
 
 .bulle{
     position:absolute;
@@ -15,10 +10,12 @@
 
 .title{
     font-size: 7rem;
+    /* text-shadow:  var(--neon); */
     
 }
 .sub{
     font-size: 9rem;
+    /* text-shadow:  var(--neon); */
 }
 /* .bm1{
     position:absolute;
@@ -67,7 +64,7 @@
 .test{
     height: 100vh;
     overflow-y: scroll;
-    scroll-snap-type:y mandatory;
+    
      
     user-select: none;
 
@@ -81,8 +78,7 @@
 }
 .home{
     height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop:always;
+   
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -91,13 +87,17 @@
 }
 .img-scroll{
     display:none;
+    cursor: pointer;
     margin-left: auto;
-    width: 15%;
+    width: 10%;
     margin-right: auto;
     
  
 }
-
+.img-scroll2 {
+  width: 10%;
+  cursor: pointer;
+}
 .cont{
     
     display: none;
@@ -114,5 +114,34 @@
 }
 
 .link{
-    color:rgb(255, 255, 255);
+    color:rgb(0,0,0);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
+
+  .intro,.paragraph{
+    font-size: 1.3rem;
+  }
+  .title{
+    font-size: 5rem;
+    
+  }
+  .sub{
+      font-size: 3rem;
+  }
+
+}
+@media only screen and (min-device-width : 601px) and (max-device-width : 900px) {
+
+  .intro,.paragraph{
+    font-size: 2.5rem;
+  }
+  .title{
+    font-size: 7rem;
+    
+  }
+  .sub{
+      font-size: 5rem;
+  }
+
 }

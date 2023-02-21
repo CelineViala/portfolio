@@ -6,7 +6,7 @@
                 src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676315916/phone_ixzpex.jpg" alt="image téléphone">
             <div class="intro animate__animated animate__fadeInLeft">
                 <p>N'hésitez pas à me contacter&nbsp;!</p>
-                <i class="material-icons icon-down animate__animated animate__pulse animate__infinite">arrow_drop_down</i>
+                <img (click)="scrollToBottom(links)" class="img-scroll2 animate__animated animate__infinite img-responsive" src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676981161/downb_w2rlwe.png"  alt="logo scroll" width="100px">
             </div>
         </div>
 
@@ -17,16 +17,18 @@
             <img class="img-link" appParallax [ratio]="-0.9"
                 src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676560902/bonhomme2_jmcwag.png" alt="bonhomme">
         </div>
-        <div class="linksBox">
+        <div #links class="linksBox">
             <div>
-                <a href="https://www.linkedin.com/in/devcelinev/" class="label-link">Sur LinkedIn <img class="logo"
+                <a href="https://www.linkedin.com/in/devcelinev/" class="label-link"  target="_blank">Sur LinkedIn <img class="logo"
                         src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676561922/linkedin_yc4smx.png"
                         alt="logo linkedin" width="50"></a><a class="link"
-                    href="https://www.linkedin.com/in/devcelinev/">Profil</a>
+                    href="https://www.linkedin.com/in/devcelinev/" target="_blank">Profil</a>
             </div>
             <div>
-                <a href="mailto:celineviala.dev@gmail.com" class="label-link">Par mail </a><a class="link"
-                    href="mailto:celineviala.dev@gmail.com">celineviala.dev@gmail.com</a>
+                <a href="mailto:celineviala.dev@gmail.com" class="label-link" target="_blank">Par mail <img class="logo"
+                    src="https://res.cloudinary.com/dhpiuysko/image/upload/v1676986765/mail-142_itrtzn.png"
+                    alt="logo linkedin" width="50"></a><a class="link"
+                    href="mailto:celineviala.dev@gmail.com" target="_blank">celineviala.dev@gmail.com</a>
             </div>
         </div>
     </div>

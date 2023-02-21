@@ -8,23 +8,21 @@ import { DOCUMENT, Location } from '@angular/common';
   templateUrl:'./app.component.html',
   styleUrls:['./app.component.css']
 })
+
 export class AppComponent {
   @ViewChild('burger', { static: true }) burger!:ElementRef;
   @ViewChild('content', { static: true }) content!:ElementRef;
 
-  private colors=['#ffa801','#3c40c6','#218c74','#FBA7FD'];
+  private colors=['#ffa801','#3c40c6','#218c74','#e263e4'];
 
   private openedMenu:boolean=false;
   private previousUrl:string;
   
 
-  constructor(@Inject(DOCUMENT) private document: Document,protected router:Router, private location:Location){
-
-  }
+  constructor(@Inject(DOCUMENT) private document: Document,protected router:Router, private location:Location){}
  
   ngOnInit(){
     //unallow pinch zoom
-    
     this.document.addEventListener('wheel', event => {
       const { ctrlKey } = event
       if (ctrlKey) {
@@ -34,36 +32,35 @@ export class AppComponent {
    }, { passive: false })
 
 
-   
+   //change burger color
     let i=0,j=0
     setInterval(()=>{
       i+=1
       i%=4
       this.burger.nativeElement.style.color=this.colors[i];
-      // this.burger.nativeElement.style.transform="rotate(360deg)";
-
-
     },3000)
     
   }
   
   handleClickBurger(previousUrl:string){
-    this.burger.nativeElement.style.transform="rotate(-360deg)";
+    // this.burger.nativeElement.style.transform="rotate(-360deg)";
+    this.burger.nativeElement.classList.add("animate__flip");
+    setTimeout(() => {
+      this.burger.nativeElement.classList.remove("animate__flip");
+    }, 500);
     if(this.openedMenu && this.previousUrl){
       this.router.navigate([this.previousUrl]);
-      this.burger.nativeElement.textContent="menu"
+      this.burger.nativeElement.textContent="menu";
       this.openedMenu=!this.openedMenu;
     }
     else{
       if( previousUrl!=='/menu')
       {this.router.navigate([`/menu`]);
       this.previousUrl=previousUrl;
-      this.burger.nativeElement.textContent="close"
+      this.burger.nativeElement.textContent="close";
       this.openedMenu=!this.openedMenu;
-    }
-  }
-  console.log(previousUrl,this.openedMenu)
-    
+      }
+    }    
   }
   
   handleParallax(e:any){

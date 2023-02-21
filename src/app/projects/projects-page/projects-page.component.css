@@ -2,8 +2,6 @@
     width:80%;
     display: block;
     position: relative;
-    
-
 }
 
 .box{
@@ -70,8 +68,7 @@
 }
 .content-project{
     font-size: 2rem;
-   
-    overflow-y: hidden;
+ 
 }
 .form-goto{
     font-weight: 900;

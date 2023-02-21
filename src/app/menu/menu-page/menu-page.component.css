@@ -3,7 +3,9 @@
     text-align: center;
     
 }
-
+.link-menu:hover{
+    text-shadow: var(--neon-blue);
+}
 .links{
     margin-top: 3rem;
     display: flex;
@@ -16,6 +18,7 @@
 .link{
     display: flex;
     justify-content: center;
+    font-weight: 900;
     align-items: center;
     gap :1rem;
    

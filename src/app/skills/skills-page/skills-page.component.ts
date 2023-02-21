@@ -1,5 +1,6 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, Inject, QueryList, ViewChild, ViewChildren } from '@angular/core';
+
+import { Component, ElementRef, QueryList,ViewChildren } from '@angular/core';
+
 import { listSkills } from './listSkills';
 import { Skill } from './skill';
 
@@ -13,14 +14,11 @@ export class SkillsPageComponent {
   @ViewChildren('bar') bar: QueryList<ElementRef>
   @ViewChildren('load') load: QueryList<ElementRef>
 
-  constructor(@Inject(DOCUMENT) private document: Document){ 
-  }
-
   ngOnInit(){
     this.listSkills=listSkills;
   }
+  
   ngAfterViewInit(){
-    console.log(this.bar)
     const bars=this.bar.toArray()
     // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
 
@@ -33,23 +31,13 @@ export class SkillsPageComponent {
       const options = {
         duration: 2000,
         iterations: 1,
-      }
+      };
       setTimeout(() => {
-        bar.nativeElement.animate(keyframe,options)
+        bar.nativeElement.animate(keyframe,options);
         bar.nativeElement.style.width=`${bar.nativeElement.dataset['percent']}`;
-        console.log(this.listSkills[i].since)
-        
-        
         this.load.get(i)!.nativeElement.textContent=this.listSkills[i].since;
         this.load.get(i)!.nativeElement.style.fontWeight=900;
       }, 500*i)
-        
-        
-    
     })
-  }
-
-  test(bar:any){
-    ;
   }
 }

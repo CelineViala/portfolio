@@ -7,10 +7,4 @@ import { Router } from '@angular/router';
   templateUrl: './menu-page.component.html',
   styleUrls: ['./menu-page.component.css']
 })
-export class MenuPageComponent {
-  constructor(@Inject(DOCUMENT) private document: Document){}
-  ngOnInit(){
-    this.document.body.style.backgroundImage=""
-  }
-
-}
+export class MenuPageComponent {}

@@ -1,22 +1,12 @@
-import { DOCUMENT } from '@angular/common';
-import { Component, ElementRef, Inject, ViewChild } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact-page',
   templateUrl: './contact-page.component.html',
   styleUrls: ['./contact-page.component.css'],
-  
 })
 export class ContactPageComponent {
-
-  @ViewChild('title', { static: true }) title:ElementRef;
-
-  constructor(@Inject(DOCUMENT) private document: Document, private router:Router){
-
-  }
-  ngOnInit(){
-    // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
-    // this.title.nativeElement.scrollIntoView()
+  scrollToBottom(elm:any){
+    elm.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
   }
 }
