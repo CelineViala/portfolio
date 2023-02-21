@@ -25,7 +25,7 @@ export class ScrollDirective {
   }
   @HostListener('scroll')
   onWindowScroll(){
-
+      console.log("scroo")
       if(this.direction==0 && this.eleRef.nativeElement.scrollTop>this.previousScroll){
         this.direction=1 
         this.initial+=1
@@ -48,8 +48,6 @@ export class ScrollDirective {
         setTimeout(() => {
           this.direction=0;
           this.eleRef.nativeElement.style.overflowY="scroll"
-     
-          
         }, 900);
       }
       
