@@ -33,42 +33,42 @@
      height: var(--height-bulle);
      left:0;
      top:0;
-    -webkit-animation: moveX 10s linear 0s infinite alternate ,
-                       moveY 7.4s linear 0s infinite alternate;
-    -moz-animation: moveX 10s linear 0s infinite alternate , 
-                    moveY 7.4s linear 0s infinite alternate;
-    -o-animation: moveX 10s linear 0s infinite alternate , 
-                  moveY 7.4s linear 0s infinite alternate;
-    animation: moveX 10s linear 0s infinite alternate , 
-               moveY 7.4s linear 0s infinite alternate;
+    -webkit-animation: mx 10s linear 0s infinite alternate ,
+                       my 7.4s linear 0s infinite alternate;
+    -moz-animation: mx 10s linear 0s infinite alternate , 
+                    my 7.4s linear 0s infinite alternate;
+    -o-animation: mx 10s linear 0s infinite alternate , 
+                  my 7.4s linear 0s infinite alternate;
+    animation: mx 10s linear 0s infinite alternate , 
+               my 7.4s linear 0s infinite alternate;
     
 } 
 
 
 
-@-webkit-keyframes moveX {
+@-webkit-keyframes mx {
     from { left: 0; } to { left: var(--stop-X); }
     
   }
-  @-moz-keyframes moveX {
+  @-moz-keyframes mx {
     from { left: 0; } to { left:var(--stop-X); }
   }
-  @-o-keyframes moveX {
+  @-o-keyframes mx {
     from { left: 0; } to { left:var(--stop-X);  }
   }
-  @keyframes moveX {
+  @keyframes mx {
     from { left: 0; } to { left: var(--stop-X);  }
   }
-  @-webkit-keyframes moveY {
+  @-webkit-keyframes my {
     from { top: 0; } to { top: var(--stop-Y) }
   }
-  @-moz-keyframes moveY {
+  @-moz-keyframes my {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
-  @-o-keyframes moveY {
+  @-o-keyframes my {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
-  @keyframes moveY {
+  @keyframes my {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
 .test{
