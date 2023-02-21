@@ -33,42 +33,42 @@
      height: var(--height-bulle);
      left:0;
      top:0;
-    -webkit-animation: _moveX 10s linear 0s infinite alternate ,
-                       _moveY 7.4s linear 0s infinite alternate;
-    -moz-animation: _moveX 10s linear 0s infinite alternate , 
-                    _moveY 7.4s linear 0s infinite alternate;
-    -o-animation: _moveX 10s linear 0s infinite alternate , 
-                  _moveY 7.4s linear 0s infinite alternate;
-    animation: _moveX 10s linear 0s infinite alternate , 
-               _moveY 7.4s linear 0s infinite alternate;
+    -webkit-animation: MoveX 10s linear 0s infinite alternate ,
+                       MoveY 7.4s linear 0s infinite alternate;
+    -moz-animation: MoveX 10s linear 0s infinite alternate , 
+                    MoveY 7.4s linear 0s infinite alternate;
+    -o-animation: MoveX 10s linear 0s infinite alternate , 
+                  MoveY 7.4s linear 0s infinite alternate;
+    animation: MoveX 10s linear 0s infinite alternate , 
+               MoveY 7.4s linear 0s infinite alternate;
     
 } 
 
 
 
-@-webkit-keyframes _moveX {
+@-webkit-keyframes MoveX {
     from { left: 0; } to { left: var(--stop-X); }
     
   }
-  @-moz-keyframes _moveX {
+  @-moz-keyframes MoveX {
     from { left: 0; } to { left:var(--stop-X); }
   }
-  @-o-keyframes _moveX {
+  @-o-keyframes MoveX {
     from { left: 0; } to { left:var(--stop-X);  }
   }
-  @keyframes _moveX {
+  @keyframes MoveX {
     from { left: 0; } to { left: var(--stop-X);  }
   }
-  @-webkit-keyframes _moveY {
+  @-webkit-keyframes MoveY {
     from { top: 0; } to { top: var(--stop-Y) }
   }
-  @-moz-keyframes _moveY {
+  @-moz-keyframes MoveY {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
-  @-o-keyframes _moveY {
+  @-o-keyframes MoveY {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
-  @keyframes _moveY {
+  @keyframes MoveY {
     from { top: 0; } to { top: var(--stop-Y);  }
   }
 .test{
