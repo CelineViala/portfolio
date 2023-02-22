@@ -83,7 +83,10 @@
    }
      
 }
-
+@media only screen and (min-device-width : 700px){
+   .link, .label-link{
+      font-size: 2rem;}
+}
 @media screen and  (max-device-width : 900px) and (orientation: landscape) {
    
    img{
