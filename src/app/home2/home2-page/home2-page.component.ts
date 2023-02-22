@@ -39,7 +39,7 @@ export class Home2PageComponent {
           this.bulle.nativeElement.style.bottom = currentPosBottom+1+'%';
           this.bulle.nativeElement.style.width=`${this.bulle.nativeElement.width+10}px`;
         }else{
-          this.bulle.nativeElement.setAttribute("src","https://res.cloudinary.com/dhpiuysko/image/upload/v1676388250/b2_kapwwr.png");
+          // this.bulle.nativeElement.setAttribute("src","https://res.cloudinary.com/dhpiuysko/image/upload/v1676388250/b2_kapwwr.png");
           setTimeout(() => {
             this.bulle.nativeElement.style.display="none";
             clearInterval(idInter);
@@ -47,13 +47,16 @@ export class Home2PageComponent {
             this.subtitle.nativeElement.classList.add("animate__rubberBand");
             this.content.nativeElement.style.display='flex';
             const welcomeText="Hello world ! Je suis Céline, développeuse Junior passionnée !";
-            this.img.nativeElement.style.display="block";
+            setTimeout(() => {
+              
+              this.img.nativeElement.style.display="block";
+            }, 800);
             this.intro.nativeElement.textContent="";
             i=0;
             setInterval(()=>{
               if (i<welcomeText.length) {this.intro.nativeElement.textContent+=welcomeText[i];i++}
               else{ 
-                this.scroll.nativeElement.style.display="block";
+                this.scroll.nativeElement.style.opacity=1;
                 this.scroll.nativeElement.classList.add("animate__pulse");
               }
             },35)

@@ -96,7 +96,7 @@
     
 }
 .img-scroll{
-    display:none;
+    opacity: 0;
     cursor: pointer;
     margin-left: auto;
     width: 10%;
