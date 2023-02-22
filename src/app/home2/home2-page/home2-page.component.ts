@@ -34,10 +34,11 @@ export class Home2PageComponent {
      */
       const idInter=setInterval(()=>{
         let currentPosBottom=+(this.bulle.nativeElement.style.bottom.split("%")[0])
-        if (this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2>3)
+        if (this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2>0)
         {
           this.bulle.nativeElement.style.bottom = currentPosBottom+1+'%';
-          this.bulle.nativeElement.style.width=`${this.bulle.nativeElement.width+10}px`;
+    
+          this.bulle.nativeElement.style.width=`${this.bulle.nativeElement.width+Math.min(this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2+2,10)}px`;
         }else{
           // this.bulle.nativeElement.setAttribute("src","https://res.cloudinary.com/dhpiuysko/image/upload/v1676388250/b2_kapwwr.png");
           setTimeout(() => {
