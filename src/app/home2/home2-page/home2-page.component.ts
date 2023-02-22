@@ -34,7 +34,7 @@ export class Home2PageComponent {
      */
       const idInter=setInterval(()=>{
         let currentPosBottom=+(this.bulle.nativeElement.style.bottom.split("%")[0])
-        if (this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2>10)
+        if (this.bulle.nativeElement.offsetTop-this.bulle.nativeElement.height/2>3)
         {
           this.bulle.nativeElement.style.bottom = currentPosBottom+1+'%';
           this.bulle.nativeElement.style.width=`${this.bulle.nativeElement.width+10}px`;
