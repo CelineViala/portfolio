@@ -59,8 +59,14 @@
    .img-link{
       width:30%;
    }
+   .img-scroll2{
+      width: 60px;
+   }
+   .content-contact{
+      justify-content: center;
+   }
    .intro{
-      font-size: 2rem;
+      font-size:1.5rem;
    }
    .link, .label-link{
       font-size: 1rem;
@@ -70,7 +76,6 @@
       width: 25px;
    }
    .img-contact{
-  
       width:60%;
    }
    .linksBox{

@@ -19,7 +19,7 @@ export class ProjectsPageComponent {
 
   ngOnInit(){
     this.listProjects=listProjects
-    console.table(listProjects)
+    // console.table(listProjects)
     // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
   }
   ngAfterViewInit(){
