@@ -128,7 +128,13 @@
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 600px) {
-
+  .img-home{
+    width: 150px;
+  }
+  .home{
+    justify-content: center;
+    gap:1.2rem;
+  }
   .intro,.paragraph{
     font-size: 1.3rem;
   }
@@ -154,4 +160,37 @@
       font-size: 5rem;
   }
 
+}
+
+@media screen and  (max-device-width : 900px) and (orientation: landscape) {
+ 
+
+  .title{
+     font-size:3rem;
+  }
+  .sub{
+     font-size: 2rem;
+  }
+ h2{
+  font-size: 1.5rem;
+ }
+.img-home{
+  width: 100px;
+}
+.img-scroll2{
+  margin-top:0.5rem;
+}
+
+.home{
+  justify-content: start;
+
+}
+
+.btn-app{
+  font-size: 1rem;
+  margin:0.5rem;
+}
+  .intro,.paragraph{
+    font-size: 1rem;
+  }
 }

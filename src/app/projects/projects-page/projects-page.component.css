@@ -90,3 +90,19 @@
     }
 }
 
+@media screen and  (max-device-width : 900px) and (orientation: landscape) {
+  
+    .img-intro{
+       max-width: 120px;
+    }
+    h1{
+       font-size:3rem;
+    }
+   
+    h2{
+       font-size: 3rem;
+    }
+    .btn-app{
+        margin-bottom:50px;
+    }
+   }

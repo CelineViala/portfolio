@@ -17,12 +17,17 @@ export class Home2PageComponent {
   @ViewChild('subtitle', { static: true }) subtitle:ElementRef;
   @ViewChild('intro', { static: true }) intro:ElementRef;
   @ViewChild('img', { static: true }) img:ElementRef;
+  @ViewChild('box', { static: true }) box:ElementRef;
 
  
   protected subtitleMsg:string="";
   protected titleMsg:string="";
   
   ngOnInit(){
+    window.addEventListener('orientationchange',()=>{
+      console.log("change")
+      this.box.nativeElement.scrollBy(0,-1)
+    })
     let i=0
     /**
      * to move the bubble from the bottom to the top

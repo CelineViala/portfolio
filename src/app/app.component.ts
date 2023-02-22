@@ -23,6 +23,7 @@ export class AppComponent {
  
   ngOnInit(){
     //unallow pinch zoom
+    
     this.document.addEventListener('wheel', event => {
       const { ctrlKey } = event
       if (ctrlKey) {

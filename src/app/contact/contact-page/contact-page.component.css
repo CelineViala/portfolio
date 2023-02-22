@@ -73,6 +73,29 @@
   
       width:60%;
    }
-   
+   .linksBox{
+      gap:1rem;
+   }
      
 }
+
+@media screen and  (max-device-width : 900px) and (orientation: landscape) {
+   
+   img{
+      max-width: 150px;
+   }
+   h1{
+      font-size:3rem;
+   }
+  
+   h2{
+      font-size: 2rem;
+   }
+   .intro{
+      margin-bottom: 100px;
+   }
+
+   .linksBox{
+      gap:1rem;
+   }
+  }

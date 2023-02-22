@@ -31,8 +31,8 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 3,
         name: "Reconversion",
-        color:'#e263e4',
-        colorName:'pink',
+        color:'#3c40c6',
+        colorName:'blue',
         anim:"animate__fadeInTopRight",
         description: "J'ai signé une rupture conventionnelle en 2021 afin de pouvoir exercer le métier qui me passionne."
        
@@ -61,8 +61,8 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 5,
         name: "DWWM",
-        color:'#218c74',
-        colorName:'green',
+        color:'#e263e4',
+        colorName:'pink',
         anim:"animate__fadeInTopRight",
        
         description: "En Janvier 2023, j'ai obtenu le titre de Développeur Web et Web Mobile.",
