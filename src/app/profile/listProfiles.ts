@@ -22,7 +22,7 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 3,
         name: "Autodidacte",
-        color:'#e263e4',
+        color:'#BE0EBE',
         colorName:'pink',
         anim:"animate__fadeInTopLeft",
         description: "Passionnée d'informatique et de programmation, j'ai commencé à apprendre à coder en autodidacte en parallèle de mon métier d'AESH à partir de 2018."
@@ -61,7 +61,7 @@ export const listItemsCareer: ItemCareer[] = [
     {
         id: 5,
         name: "DWWM",
-        color:'#e263e4',
+        color:'#BE0EBE',
         colorName:'pink',
         anim:"animate__fadeInTopRight",
        

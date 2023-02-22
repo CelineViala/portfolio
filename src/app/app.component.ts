@@ -13,7 +13,7 @@ export class AppComponent {
   @ViewChild('burger', { static: true }) burger!:ElementRef;
   @ViewChild('content', { static: true }) content!:ElementRef;
 
-  private colors=['#ffa801','#3c40c6','#218c74','#e263e4'];
+  private colors=['#ffa801','#3c40c6','#218c74','#BE0EBE'];
 
   openedMenu:boolean=false;
   private previousUrl:string="/menu";
@@ -54,7 +54,7 @@ export class AppComponent {
       {this.router.navigate([this.previousUrl])}
     }
     this.previousUrl=url
-    console.log(url,this.openedMenu)
+    //console.log(url,this.openedMenu)
    
   }
   

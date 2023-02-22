@@ -23,7 +23,7 @@ export class SkillsPageComponent {
     // this.document.body.style.backgroundImage="url('https://res.cloudinary.com/dhpiuysko/image/upload/v1676844043/img_nik1gw.png')";
 
     bars.forEach((bar,i)=>{
-    console.log(bar,bar.nativeElement.dataset['percent'] )
+    //console.log(bar,bar.nativeElement.dataset['percent'] )
       const keyframe = [
         { width: '0%' },
         { width: bar.nativeElement.dataset['percent'] }

@@ -137,10 +137,14 @@
   }
   .intro,.paragraph{
     font-size: 1.3rem;
+    margin:0;
   }
   .title{
     font-size: 5rem;
     
+  }
+  h2{
+    margin: 0;
   }
   .sub{
       font-size: 3rem;

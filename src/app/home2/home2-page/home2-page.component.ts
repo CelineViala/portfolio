@@ -25,7 +25,7 @@ export class Home2PageComponent {
   
   ngOnInit(){
     window.addEventListener('orientationchange',()=>{
-      console.log("change")
+      //console.log("change")
       this.box.nativeElement.scrollBy(0,-1)
     })
     let i=0

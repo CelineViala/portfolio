@@ -21,16 +21,16 @@ export class ScrollDirective {
   constructor(private eleRef : ElementRef) { }
   ngOnInit(){
     this.sections=[this.home,this.projects,this.profile,this.skills,this.contact]
-    console.log(this.sections)
+    //console.log(this.sections)
   }
   @HostListener('scroll')
   onWindowScroll(){
-      console.log("scroo")
+      //console.log("scroo")
       if(this.direction==0 && this.eleRef.nativeElement.scrollTop>this.previousScroll){
         this.direction=1 
         this.initial+=1
       
-        console.log(this.initial)
+        //console.log(this.initial)
         this.sections[this.initial].scrollIntoView()
         this.previousScroll=this.eleRef.nativeElement.scrollTop;
         setTimeout(() => {
@@ -42,7 +42,7 @@ export class ScrollDirective {
         this.direction=-1
         this.initial-=1
         
-        console.log(this.initial)
+        //console.log(this.initial)
         this.sections[this.initial].scrollIntoView()
         this.previousScroll=this.eleRef.nativeElement.scrollTop;
         setTimeout(() => {
@@ -55,7 +55,7 @@ export class ScrollDirective {
       {  this.bubble.style.opacity=0}
         else{
         this.bubble.style.opacity=1}
-      console.log(scrollY)
+      //console.log(scrollY)
       this.eleRef.nativeElement.style.overflowY="hidden"
       this.eleRef.nativeElement.scrollTop=this.previousScroll
      
@@ -63,7 +63,7 @@ export class ScrollDirective {
 
     @HostListener('scrollend')
     onWindowScrollend(){
-      console.log("end")
+      //console.log("end")
     }
     
 }

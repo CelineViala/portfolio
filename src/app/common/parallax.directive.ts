@@ -15,7 +15,7 @@ export class ParallaxDirective {
   ngOnInit(){
     // const observer=new IntersectionObserver((entries)=>{
     //   for (const entry of entries){
-    //     console.log(entry)
+    //  console.log(entry)
     //     if(entry.isIntersecting){
     //       this.isVisible=true;
     //     }else{
@@ -40,7 +40,7 @@ export class ParallaxDirective {
         
       
         this.eleRef.nativeElement.style.setProperty("transform",`translatex(${t}px)`)
-        // console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
+        // //console.log(this.eleRef.nativeElement,this.offset(this.eleRef.nativeElement),scrollY)
       // this.eleRef.nativeElement.style.top = (this.initialTop - (window.scrollY * this.parallaxRatio)) + 'px'
     }
 

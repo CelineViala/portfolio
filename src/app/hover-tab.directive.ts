@@ -25,7 +25,7 @@ export class HoverTabDirective {
       this.textDescription=this.param[1].textContent;
       this.param[1].style.color=this.param[2];
       const h= this.param[1].style.height
-      console.log(h)
+      //console.log(h)
       this.param[1].style.height=`${h}px`;
       this.param[1].textContent="";
       this.param[1].style.visibility="visible";
