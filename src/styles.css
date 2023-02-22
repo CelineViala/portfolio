@@ -76,6 +76,7 @@ h2{
    border-radius: 25px;
    font-size: 1.5rem;
    color: black;
+   cursor: pointer;
 }
 
 .btn-app:hover{

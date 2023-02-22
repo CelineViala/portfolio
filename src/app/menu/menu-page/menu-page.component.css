@@ -1,6 +1,7 @@
 .link-menu{
     font-size: 2.5rem;
     text-align: center;
+    cursor: pointer;
     
 }
 .link-menu:hover{
