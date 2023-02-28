@@ -35,7 +35,7 @@ export class ScrollDirective {
         this.previousScroll=this.eleRef.nativeElement.scrollTop;
         setTimeout(() => {
           this.direction=0;
-          this.eleRef.nativeElement.style.overflowY="scroll"
+          this.eleRef.nativeElement.style.overflowY="scroll";
         }, 900);
       }
       if(this.direction==0 && this.eleRef.nativeElement.scrollTop<this.previousScroll){
