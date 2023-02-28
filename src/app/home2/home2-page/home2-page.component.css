@@ -168,9 +168,9 @@
   }
 
 }
-@media screen and  (max-device-height : 790px) and (orientation:landscape){
+@media screen and  (max-device-height : 790px){
   .home{
-    gap:0;
+    gap:0.5rem;
   }
   .paragraph{
     font-size: 1.5rem;
