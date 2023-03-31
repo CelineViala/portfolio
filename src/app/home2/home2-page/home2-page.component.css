@@ -83,7 +83,7 @@
 
 }
 .intro{
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: center;
     font-weight: 900;
 
@@ -94,14 +94,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:0.5rem;
     
 }
 .img-scroll{
     opacity: 0;
     cursor: pointer;
     margin-left: auto;
-    width: 6%;
+    width: 5%;
     margin-right: auto;
     
     
